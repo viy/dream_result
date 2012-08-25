@@ -8,7 +8,11 @@ gem 'rails', '3.2.3'
 gem 'sqlite3'
 gem 'cancan'
 gem 'activeadmin'
-
+gem 'rspec'
+gem 'rr'
+gem 'jquery-ui-rails'
+gem 'bootstrap-sass', '~> 2.0.3'
+gem 'bourbon'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
