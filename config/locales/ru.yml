@@ -1,0 +1,11 @@
+ru:
+  services:
+    all: "Все услуги"
+    interior: "Интерьер"
+    exterior: "Экстерьер"
+    varnish: "Лакокрасочное покрытие"
+    varnish_types:
+      cleaning: "Чистка"
+      prepearing: "Подготовка"
+      polishing: "Полировка"
+      protection: "Защита"

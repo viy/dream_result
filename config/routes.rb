@@ -1,4 +1,6 @@
 Sto::Application.routes.draw do
+  get "services/index"
+
   ActiveAdmin.routes(self)
 
   devise_for :users, ActiveAdmin::Devise.config
