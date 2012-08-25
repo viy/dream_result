@@ -1,0 +1,65 @@
+
+.header{
+  @include background-image(linear-gradient(#CACACA, #DCDCDC));
+}
+
+
+.registration {
+  float: right;
+  margin-top: -5px;
+}
+
+.navigation-menu {
+  width: 800px;
+  padding: 18px;
+  font-size: 16px;
+}
+
+.navbar-inner {
+  height: 21px
+}
+
+.navbar .nav > li {
+  margin: 0;
+}
+
+.navbar .nav > li > a {
+  color: "#C3C3C3";
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar .nav .active > a, .navbar .nav .active > a:hover {
+  @include background-image(linear-gradient(#CACACA, #DCDCDC));
+  color: DarkSlateGrey;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.main-brand-image {
+  height: 78px;
+  z-index: 100;
+}
+
+.main-brand-image-div {
+  display: inline-block;
+  float: left;
+}
+
+.main-navigation-menu {
+  padding-top: 16px;
+  padding-left: 116px;
+  width: 800px
+}
+
+.shop-nav {
+  float: right;
+  width: 40px;
+  height: 27px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 5px;
+  margin-right: 12px;
+  margin-top: -18px;
+  background-color: #979797;
+  @include border-radius(0 0 2px 2px);
+  //  @include background-image(linear-gradient(#313131, #292929));
+}

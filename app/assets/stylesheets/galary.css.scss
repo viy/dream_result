@@ -1,0 +1,104 @@
+// Place all the styles related to the galary controller here.
+// They will automatically be included in application.css.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.small-image-galary {
+  margin-left: 19%;
+  width:25%
+}
+
+.image_carousel {
+  padding: 15px 0 15px 15%;
+  width: 500px;
+}
+
+.gallery_controls {
+  width: 195%;
+  margin-top: -20%;
+  margin-bottom: 7%;
+  margin-left: -10%;
+}
+
+.image_carousel img {
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 3px;
+  margin: 7px;
+  display: block;
+  float: left;
+}
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+a.next {
+  float: right;
+}
+
+a.prev, a.next {
+  background: image-url("miscellaneous_sprite.png") no-repeat transparent;
+  width: 45px;
+  height: 50px;
+  display: inline-table;
+  top: 85px;
+}
+a.prev {
+  left: -22px;
+  background-position: 0 0;
+}
+
+a.prev:hover {
+  background-position: 0 -50px;
+}
+
+a.prev.disabled {   background-position: 0 -100px !important;  }
+a.next {
+  right: -22px;
+  background-position: -50px 0;
+}
+
+a.next:hover {
+  background-position: -50px -50px;
+}
+
+a.next.disabled {   background-position: -50px -100px !important;  }
+a.prev.disabled, a.next.disabled {
+  cursor: default;
+}
+
+a.prev span, a.next span {
+  display: none;
+}
+
+.galary_pagination {
+  text-align: center;
+  display: inline-block;
+  position: inherit;
+  margin-top: 10%;
+  margin-left: 4%;
+
+}
+.galary_pagination a {
+  background: url(../images/miscellaneous_sprite.png) 0 -300px no-repeat transparent;
+  width: 15px;
+  height: 15px;
+  margin: 0 5px 0 0;
+  display: inline-block;
+}
+
+.galary_pagination a.selected {
+  background-position: -25px -300px;
+  cursor: default;
+}
+.galary_pagination a span {
+  display: none;
+}
+
+.main_gallery_controls {
+  width: 12%;
+  height: 12%;
+  z-index: 10;
+  left: 45%;
+  position: absolute;
+}
