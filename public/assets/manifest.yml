@@ -7,6 +7,7 @@ blue_auto.png: blue_auto-f434a03dd5bc8e0decc218d2a6dea20b.png
 blue_next.png: blue_next-695c5d74b1f13f1c06326b844ab37d04.png
 blue_pager.png: blue_pager-952c98b49d0d237d9f1f67692a5c0169.png
 blue_prev.png: blue_prev-1995c80e45f898761cb2a60f4d28cf97.png
+facebook.png: facebook-c2f9204747c2524381c93a40ce493cbe.png
 galary/slide_avtomoikaabonement.jpg: galary/slide_avtomoikaabonement-dd7440df9702a0629f5eb2d1376a6b6a.jpg
 galary/slide_avtomoikagarantiya.jpg: galary/slide_avtomoikagarantiya-2524d8d73d677e629d85cdb98f3568b7.jpg
 galary/slide_lutshayaavtomoika.jpg: galary/slide_lutshayaavtomoika-edad6d9d618422f0766ad3d92ef1f8b6.jpg
@@ -43,10 +44,11 @@ yellow_auto.png: yellow_auto-7602f56443e4bb58437131594d04a553.png
 yellow_next.png: yellow_next-3757f24bf89c37e995869a59157a7c79.png
 yellow_pager.png: yellow_pager-30b7a29afd38e5708f7aaa2f177257bb.png
 yellow_prev.png: yellow_prev-18aaf62b76db0971f0e7cb19e3ce6201.png
+youtube.png: youtube-74e139c5ef69a1b16953f391e327bd64.png
 active_admin.js: active_admin-b27e3ae2a4a33245e167280a56052b89.js
-application.js: application-47b00e7355df46c941021bdbd4798122.js
+application.js: application-65a9f19f7f6c1b035268eea33df19467.js
 active_admin.css: active_admin-f55a970cc8f92d42a0dc76037952528d.css
-application.css: application-0566f1d8784bbf3842bce4c6081d8d3b.css
+application.css: application-4852eece795ba6fdd246009ddac843f5.css
 glyphicons-halflings-white.png: glyphicons-halflings-white-13553a5bf21ae3cc374006592488ec64.png
 glyphicons-halflings.png: glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png
 jquery-ui/ui-bg_flat_0_aaaaaa_40x100.png: jquery-ui/ui-bg_flat_0_aaaaaa_40x100-a1eb3e0764573ed4b261ca742ed96ac3.png

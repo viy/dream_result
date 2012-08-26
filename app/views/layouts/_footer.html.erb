@@ -3,74 +3,92 @@
     <div class="upper-footer">
       <div class="products">
         <div class="name">
-          Продукты
+          <%= t 'products' %>
         </div>
         <ul>
-          <li><a>Чистка</a></li>
-          <li><a>Уход</a></li>
-          <li><a>Подготовка</a></li>
-          <li><a>Полировка</a></li>
-          <li><a>Защита</a></li>
-          <li><a>Поддержание</a></li>
+          <li><a><%= t 'services.varnish_types.cleaning' %></a></li>
+          <li><a><%= t 'services.varnish_types.prepearing' %></a></li>
+          <li><a><%= t 'services.varnish_types.polishing' %></a></li>
+          <li><a><%= t 'services.varnish_types.protection' %></a></li>
+          <li><a><%= t 'services.varnish_types.care' %></a></li>
         </ul>
         <ul>
-          <li><a>Пластик</a></li>
-          <li><a>Стекло</a></li>
-          <li><a>Резина</a></li>
-          <li><a>Метал</a></li>
-          <li><a>Мотор</a></li>
+          <li><a><%= t 'materials.varnish' %></a></li>
+          <li><a><%= t 'materials.metal' %></a></li>
+          <li><a><%= t 'materials.plastic' %></a></li>
+          <li><a><%= t 'materials.glass' %></a></li>
+          <li><a><%= t 'materials.ruber' %></a></li>
+          <li><a><%= t 'materials.textile' %></a></li>
         </ul>
       </div>
       <img src="<%= image_path("u10_line.png") %>" class="line">
       <div class="service">
         <div class="name">
-          Услуги
+          <%= t 'services.name' %>
         </div>
-        <ul>
-          <li><a>Пластик</a></li>
-          <li><a>Стекло</a></li>
-          <li><a>Диски и шины</a></li>
-          <li><a>Моторный отсек</a></li>
-          <li><a>Фары</a></li>
-          <li><a>Текстиль</a></li>
-        </ul>
-        <ul>
-          <li><a>Чистка</a></li>
-          <li><a>Уход</a></li>
-          <li><a>Полировка</a></li>
-          <li><a>Подготовка</a></li>
-          <li><a>Защита</a></li>
-        </ul>
-        <ul>
-          <li><a>Программа 1</a></li>
-          <li><a>Программа 2</a></li>
-        </ul>
+        <div>
+          <div class="upper-footer-s">
+            <ul>
+              <li><a><%= t 'services.varnish' %></a></li>
+              <li><a><%= t 'services.varnish_types.cleaning' %></a></li>
+              <li><a><%= t 'services.varnish_types.prepearing' %></a></li>
+              <li><a><%= t 'services.varnish_types.polishing' %></a></li>
+              <li><a><%= t 'services.varnish_types.protection' %></a></li>
+            </ul>
+            <ul>
+              <li><a><%= t 'materials.plastic' %></a></li>
+              <li><a><%= t 'materials.glass' %></a></li>
+              <li><a><%= t 'parts.disks' %></a></li>
+              <li><a><%= t 'parts.engine_cave' %></a></li>
+              <li><a><%= t 'parts.headlamp' %></a></li>
+              <li><a></a></li>
+            </ul>
+          </div>
+          <div class="upper-footer-ps">
+            <ul>
+              <li><a><%= t 'programs.basic' %></a></li>
+              <li><a><%= t 'programs.express' %></a></li>
+            </ul>
+            <ul>
+              <li><a><%= t 'services.interior' %></a></li>
+              <li><a><%= t 'services.exterior' %></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <img src="<%= image_path("u10_line.png") %>" class="line">
       <div class="contact">
         <div class="name">
-          Контакты
+          <%= t 'contacts.name' %>
         </div>
-        <div class="content">
-            тел.: +38 (050) 413 09 31
-            <br>
-            +38 (093) 413 89 95
-            <br>
-            <br>
-            info@dreamshine.com
-            </div>
+        <div class="address">
+          <%= t 'contacts.address' %>
+        </div>
+        <div class="phone">
+          <%= t 'contacts.phone' %>
+        </div>
+        <div class="letter">
+          <a href="#"> <%= t 'contacts.letter' %> </a>
+        </div>
       </div>
       <img src="<%= image_path("u10_line.png") %>" class="line">
 
       <div class="subscription">
-        <button class="btn" >online заказ услуг </button>
-        <br>
+        <div class="resources">
+          <img src="<%= image_path("facebook.png") %>" alt="">
+          <img src="<%= image_path("youtube.png") %>" alt="">
+        </div>
         <div class="form">
-          Подписка на акции и новинки
+          <div>
+            <%= t 'subscription.name' %>
+          </div>
           <form action="">
-            <input type="text"></input>
-            <br>
-            <%= submit_tag "Подписаться"%>
+            <div>
+              <input type="text">
+            </div>
+            <div>
+              <%= submit_tag t 'subscription.subscribe' %>
+            </div>
           </form>
         </div>
       </div>
@@ -82,11 +100,11 @@
         <img src="<%= image_path("u160_original.png") %>" alt="Dream result" class="brand-image">
       </div>
       <div class="copyrigts">
-        © 2002-2012 DreamShine, Сеть сервисцентров по уходу за авто. <br>
+        <%= t 'rights.name' %> <br>
         All rights reserved.
       </div>
       <div class="personal">
-        <a href="#">Для персонала</a>
+        <a href="#"><%= t 'for-personal' %></a>
       </div>
     </div>
   </div>

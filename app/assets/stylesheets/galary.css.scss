@@ -13,16 +13,14 @@
 }
 
 .gallery_controls {
-  width: 195%;
+  width: 950px;
   margin-top: -20%;
   margin-bottom: 7%;
   margin-left: -10%;
 }
 
 .image_carousel img {
-  border: 1px solid #ccc;
   background-color: white;
-  padding: 3px;
   margin: 7px;
   display: block;
   float: left;
@@ -43,6 +41,7 @@ a.prev, a.next {
   display: inline-table;
   top: 85px;
 }
+
 a.prev {
   left: -22px;
   background-position: 0 0;

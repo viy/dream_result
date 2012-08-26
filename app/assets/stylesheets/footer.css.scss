@@ -2,17 +2,18 @@
   @include background-image(linear-gradient(#efefef, #ffffff));
 }
 .upper-footer .service,.upper-footer .contact, .upper-footer .products, .upper-footer .subscription {
-  display: inline-table;
+  display: inline-block;
   margin-left: 10px;
   margin-top: 10px;
   padding-right: 10px;
+  vertical-align: top;
 }
 
 $upper-div-height: 140px;
 
 .upper-footer {
   height: $upper-div-height;
-  width:926px;
+  width:100%;
   margin-left: 106px
 }
 
@@ -26,6 +27,7 @@ $upper-div-height: 140px;
 }
 
 .lower-footer .brand-image {
+  width: 100px;
   height: 44px;
 }
 
@@ -65,18 +67,39 @@ $upper-div-height: 140px;
 }
 .upper-footer ul {
   list-style: none;
-  display: inline-table;
+  display: inline-block;
 }
 .upper-footer .line {
   height: $upper-div-height;
-  display: inline-table;
+  display: inline-block;
   vertical-align: top;
 }
 
-.upper-footer .contact .content, .subscription .btn, .subscription .form {
+.subscription .btn, .subscription .form {
   color: #AAAAAA;
 }
 
 .subscription .form {
   margin-top: 5px;
+}
+
+.upper-footer-ps, .upper-footer-s {
+  display: inline-block;
+
+}
+
+.upper-footer-ps ul{
+  display: block;
+}
+
+.contact .address {
+  width: 185px;
+}
+
+.contact .letter, .contact .phone {
+  margin-top: 10px;
+}
+
+.subscription img {
+  height: 40px;
 }

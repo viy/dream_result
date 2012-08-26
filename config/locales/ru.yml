@@ -1,5 +1,33 @@
 ru:
+  rights:
+    name: "© 2002-2012 DreamShine, Сеть сервисцентров по уходу за авто."
+  for-personal: "Для персонала"
+  subscription:
+    name: "Подписка на акции и новинки"
+    subscribe: "Подписаться"
+  programs:
+    basic: "Базовая программа"
+    express: "Экспрес программа"
+  products: "Продукты"
+  contacts:
+    name: "Контакты"
+    address: "Киев, ул. Мфлиновскгого 12, ТРЦ Метрополис, паркинг. "
+    phone: "тел.: +38 (044) 587 87 87"
+    letter: "Написать письмо"
+  materials:
+    varnish: "Лак"
+    metal: "Метал"
+    plastic: "Пластик"
+    glass: "Стекло"
+    ruber: "Резина"
+    textile: "Текстиль и кожа"
+  parts:
+    disks: "Диски и Шины"
+    engine_cave: "Моторный отсек"
+    headlamp: "Фары"
+    textile: "Текстиль и кожа"
   services:
+    name: "Услуги"
     all: "Все услуги"
     interior: "Интерьер"
     exterior: "Экстерьер"
@@ -9,3 +37,4 @@ ru:
       prepearing: "Подготовка"
       polishing: "Полировка"
       protection: "Защита"
+      care: "Уход"
