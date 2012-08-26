@@ -2,14 +2,14 @@
 // They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.small-image-galary {
-  margin-left: 19%;
-  width:25%
-}
-
 .image_carousel {
   padding: 15px 0 15px 15%;
   width: 500px;
+}
+
+.slider1 img {
+  height: 133px;
+  width: 270px;
 }
 
 .gallery_controls {
@@ -74,13 +74,12 @@ a.prev span, a.next span {
 .galary_pagination {
   text-align: center;
   display: inline-block;
-  position: inherit;
   margin-top: 10%;
   margin-left: 4%;
 
 }
 .galary_pagination a {
-  background: url(../images/miscellaneous_sprite.png) 0 -300px no-repeat transparent;
+  background: image-url("miscellaneous_sprite.png") 0 -300px no-repeat transparent;
   width: 15px;
   height: 15px;
   margin: 0 5px 0 0;
@@ -96,9 +95,20 @@ a.prev span, a.next span {
 }
 
 .main_gallery_controls {
-  width: 12%;
-  height: 12%;
-  z-index: 10;
+  width: 100px;
+  z-index: 30;
   left: 45%;
+  top:95px;
   position: absolute;
 }
+
+.main_carousel_container img {
+  height: 596px;
+  width: 1400px;
+}
+
+.main_carousel_container img {
+  height: 596px;
+  width: 1400px;
+}
+
