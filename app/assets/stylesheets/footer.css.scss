@@ -1,3 +1,7 @@
+.footer {
+  width: 1464px ;
+}
+
 .lower-footer-main,  .upper-footer-main {
   @include background-image(linear-gradient(#efefef, #ffffff));
 }
@@ -14,11 +18,9 @@ $upper-div-height: 140px;
 .upper-footer {
   height: $upper-div-height;
   width:100%;
-  margin-left: 106px
 }
 
 .lower-footer {
-  margin-left: 115px;
   height: 49px;
   width: 822px
 }
