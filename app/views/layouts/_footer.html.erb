@@ -36,6 +36,7 @@
               <li><a><%= t 'services.varnish_types.protection' %></a></li>
             </ul>
             <ul>
+              <li><a><%= t 'materials.metal' %></a></li>
               <li><a><%= t 'materials.plastic' %></a></li>
               <li><a><%= t 'materials.glass' %></a></li>
               <li><a><%= t 'parts.disks' %></a></li>
@@ -92,19 +93,29 @@
           </form>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="lower-footer-main">
-    <div class="lower-footer">
-      <div class="image-div">
-        <img src="<%= image_path("u160_original.png") %>" alt="Dream result" class="brand-image">
-      </div>
-      <div class="copyrigts">
-        <%= t 'rights.name' %> <br>
-        All rights reserved.
-      </div>
-      <div class="personal">
-        <a href="#"><%= t 'for-personal' %></a>
+      <div class="stripe"><img src="<%= image_path("linelight.jpg") %>" alt=""></div>
+      <div class="lower-footer">
+        <div class="copyrigts">
+          <a href="#"><%= t 'rights.name' %> </a>
+        </div>
+        <div class="personal">
+          <a href="#"><%= t 'rights.personal' %></a>
+        </div>
+        <div class="usage">
+          <a href="#"><%= t 'rights.usage' %></a>
+        </div>
+        <div class="info">
+          <a href="#"><%= t 'rights.info' %></a>
+        </div>
+        <div class="faq">
+          <a href="#"><%= t 'rights.faq' %></a>
+        </div>
+        <div class="map">
+          <a href="#"><%= t 'rights.map' %></a>
+        </div>
+        <div class="personal">
+          <a href="#"><%= t 'rights.personal' %></a>
+        </div>
       </div>
     </div>
   </div>

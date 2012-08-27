@@ -2,7 +2,7 @@
 jQuery ->
   $('.main_carousel_container').carouFredSel
     height: 596
-    width:1464
+    width:1200
     items:
       visible: 1
       minimum: 1

@@ -1,8 +1,4 @@
 ---
-banner_himchistkaavto.jpg: banner_himchistkaavto-d2f031da4c70515a7bcad7c54913f7df.jpg
-banner_polirovka.jpg: banner_polirovka-e30780544b05e468d5c5596d6f8cf3fb.jpg
-banner_polirovkaavto.jpg: banner_polirovkaavto-c0e58fd1096ef8210ce40a5dacb1665a.jpg
-banner_polirovkadiskov.jpg: banner_polirovkadiskov-0f95ddefc10f5d63df3de8906dbd6815.jpg
 blue_auto.png: blue_auto-f434a03dd5bc8e0decc218d2a6dea20b.png
 blue_next.png: blue_next-695c5d74b1f13f1c06326b844ab37d04.png
 blue_pager.png: blue_pager-952c98b49d0d237d9f1f67692a5c0169.png
@@ -22,6 +18,8 @@ green_auto.png: green_auto-148f27d5bf201324d8cd06359a80a935.png
 green_next.png: green_next-6b593bfd571f157fcf320e4be8f483b2.png
 green_pager.png: green_pager-9dba2bb6ae5e69e9c9680a531db100f2.png
 green_prev.png: green_prev-9064f4c566f591e04cb7cc881de6612e.png
+line.jpg: line-e55cb54b278be94aad22f98f74e89948.jpg
+linelight.jpg: linelight-af78624a4d6128025cb2667e0ac4bdbe.jpg
 miscellaneous_sprite.png: miscellaneous_sprite-a7cf180ac7e5cea15d5fc89044541c34.png
 orange_auto.png: orange_auto-9f7c2d24b1894b57145c2f7bed500a46.png
 orange_next.png: orange_next-81221004af018dac56e5bd6b290baecb.png
@@ -36,6 +34,10 @@ red_auto.png: red_auto-18e3cf58f3225b659786667d9ccac212.png
 red_next.png: red_next-ac872d3b4a5954a0ae8864d3561caf83.png
 red_pager.png: red_pager-0726033cb1f6b345a2efe6bb5372dc5a.png
 red_prev.png: red_prev-fab93249a9c429c2d5515dd08d9ca94e.png
+top_banner01.jpg: top_banner01-909bffe86340294831f373975ce2da0e.jpg
+top_banner02.jpg: top_banner02-58dcda4469502dd7a69f18fe0a76768d.jpg
+top_banner03.jpg: top_banner03-d511671d5718cf747829c971e4409734.jpg
+top_banner04.jpg: top_banner04-a00ddff1abdef4421c03da0ebcb89a6d.jpg
 u10_line.png: u10_line-5896c8ab398e40df8a6de0b2246bb865.png
 u10_original.png: u10_original-ad62adec24b58fe166f337cc115b87b7.png
 u156_original.png: u156_original-31efd74f5a03c04eabc2f5a9b466b63e.png
@@ -46,9 +48,9 @@ yellow_pager.png: yellow_pager-30b7a29afd38e5708f7aaa2f177257bb.png
 yellow_prev.png: yellow_prev-18aaf62b76db0971f0e7cb19e3ce6201.png
 youtube.png: youtube-74e139c5ef69a1b16953f391e327bd64.png
 active_admin.js: active_admin-b27e3ae2a4a33245e167280a56052b89.js
-application.js: application-e49cb3328542d3207e067b5ecab351a9.js
+application.js: application-535d3f251e097132fda97228c83a5524.js
 active_admin.css: active_admin-f55a970cc8f92d42a0dc76037952528d.css
-application.css: application-75a38bc7c5b4c68f267a176fe29d0b13.css
+application.css: application-593c90d0000a781a0807831e802e0aa6.css
 glyphicons-halflings-white.png: glyphicons-halflings-white-13553a5bf21ae3cc374006592488ec64.png
 glyphicons-halflings.png: glyphicons-halflings-f6675c325532ec11a984d58e172b8e2a.png
 jquery-ui/ui-bg_flat_0_aaaaaa_40x100.png: jquery-ui/ui-bg_flat_0_aaaaaa_40x100-a1eb3e0764573ed4b261ca742ed96ac3.png

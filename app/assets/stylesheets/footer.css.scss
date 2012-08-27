@@ -1,9 +1,14 @@
 .footer {
-  width: 1464px ;
+  width: 1200px ;
 }
 
-.lower-footer-main,  .upper-footer-main {
+.upper-footer-main {
+  padding-top: 10px;
+}
+
+.upper-footer-main {
   @include background-image(linear-gradient(#efefef, #ffffff));
+  padding-left: 5% ;
 }
 .upper-footer .service,.upper-footer .contact, .upper-footer .products, .upper-footer .subscription {
   display: inline-block;
@@ -20,26 +25,7 @@ $upper-div-height: 140px;
   width:100%;
 }
 
-.lower-footer {
-  height: 49px;
-  width: 822px
-}
-.lower-footer .image-div {
-  display: inline-table;
-}
-
-.lower-footer .brand-image {
-  width: 100px;
-  height: 44px;
-}
-
-.lower-footer .copyrigts {
-  display: inline-table;
-  font-size: 10px;
-  color: #AAAAAA;
-}
-.lower-footer .personal a {
-  text-decoration: underline;
+.lower-footer div a {
   color: #AAAAAA;
   font-size: 10px;
 }
@@ -57,11 +43,6 @@ $upper-div-height: 140px;
   background-position: 0 .5em;
 }
 
-.lower-footer .personal {
-  float: right;
-  display: inline-table;
-  margin-top: 12px;
-}
 .upper-footer .name {
   color: #AAAAAA;
   font-size: 15px;
@@ -104,4 +85,19 @@ $upper-div-height: 140px;
 
 .subscription img {
   height: 40px;
+}
+
+.lower-footer div {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+.lower-footer{
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+
+.upper-footer .stripe {
+  padding-left: 100px;
 }
