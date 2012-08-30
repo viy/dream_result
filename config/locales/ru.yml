@@ -26,6 +26,8 @@ ru:
     glass: "Стекло"
     ruber: "Резина"
     textile: "Текстиль и кожа"
+    textile_only: "Текстиль"
+    leather: "Кожа"
   parts:
     disks: "Диски и Шины"
     engine_cave: "Моторный отсек"

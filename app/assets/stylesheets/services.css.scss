@@ -1,3 +1,21 @@
 // Place all the styles related to the services controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "jquery-ui-1.8.23.custom.css";
+
+.services_accordion {
+  width: 220px;
+}
+.ui-accordion .ui-accordion-header a {
+  font-size: 14px;
+}
+
+.services_accordion ol {
+  list-style-type : none;
+  margin: -10px 0 0px -8px;
+  font-size: 15px;
+}
+
+.services_accordion li a {
+  cursor: pointer;
+}
