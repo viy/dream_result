@@ -5,21 +5,23 @@
         <div class="name">
           <%= t 'products' %>
         </div>
-        <ul>
-          <li><a><%= t 'services.varnish_types.cleaning' %></a></li>
-          <li><a><%= t 'services.varnish_types.prepearing' %></a></li>
-          <li><a><%= t 'services.varnish_types.polishing' %></a></li>
-          <li><a><%= t 'services.varnish_types.protection' %></a></li>
-          <li><a><%= t 'services.varnish_types.care' %></a></li>
-        </ul>
-        <ul>
-          <li><a><%= t 'materials.varnish' %></a></li>
-          <li><a><%= t 'materials.metal' %></a></li>
-          <li><a><%= t 'materials.plastic' %></a></li>
-          <li><a><%= t 'materials.glass' %></a></li>
-          <li><a><%= t 'materials.ruber' %></a></li>
-          <li><a><%= t 'materials.textile' %></a></li>
-        </ul>
+        <div class="upper-footer-products">
+          <ul>
+            <li><a><%= t 'services.varnish_types.cleaning' %></a></li>
+            <li><a><%= t 'services.varnish_types.prepearing' %></a></li>
+            <li><a><%= t 'services.varnish_types.polishing' %></a></li>
+            <li><a><%= t 'services.varnish_types.protection' %></a></li>
+            <li><a><%= t 'services.varnish_types.care' %></a></li>
+          </ul>
+          <ul>
+            <li><a><%= t 'materials.varnish' %></a></li>
+            <li><a><%= t 'materials.metal' %></a></li>
+            <li><a><%= t 'materials.plastic' %></a></li>
+            <li><a><%= t 'materials.glass' %></a></li>
+            <li><a><%= t 'materials.ruber' %></a></li>
+            <li><a><%= t 'materials.textile' %></a></li>
+          </ul>
+        </div>
       </div>
       <img src="<%= image_path("u10_line.png") %>" class="line">
       <div class="service">
@@ -42,7 +44,7 @@
               <li><a><%= t 'parts.disks' %></a></li>
               <li><a><%= t 'parts.engine_cave' %></a></li>
               <li><a><%= t 'parts.headlamp' %></a></li>
-              <li><a></a></li>
+              <li><a><%= t 'materials.textile' %></a></li>
             </ul>
           </div>
           <div class="upper-footer-ps">
@@ -84,8 +86,8 @@
             <%= t 'subscription.name' %>
           </div>
           <form action="">
-            <div>
-              <input type="text">
+            <div class="subscribe">
+              <input class="subscribe-button" type="text">
             </div>
             <div>
               <%= submit_tag t 'subscription.subscribe' %>
@@ -98,8 +100,8 @@
         <div class="copyrigts">
           <a href="#"><%= t 'rights.name' %> </a>
         </div>
-        <div class="personal">
-          <a href="#"><%= t 'rights.personal' %></a>
+        <div class="better">
+          <a href="#"><%= t 'rights.better' %></a>
         </div>
         <div class="usage">
           <a href="#"><%= t 'rights.usage' %></a>

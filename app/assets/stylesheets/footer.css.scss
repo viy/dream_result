@@ -7,9 +7,9 @@
 }
 
 .upper-footer-main {
-  @include background-image(linear-gradient(#efefef, #ffffff));
-  padding-left: 5% ;
+  padding-left: 8% ;
 }
+
 .upper-footer .service,.upper-footer .contact, .upper-footer .products, .upper-footer .subscription {
   display: inline-block;
   margin-left: 10px;
@@ -46,11 +46,13 @@ $upper-div-height: 140px;
 .upper-footer .name {
   color: #AAAAAA;
   font-size: 15px;
-  margin-bottom: 5px
+  margin-bottom: 5px;
+  margin-left: 10px;
 }
 .upper-footer ul {
   list-style: none;
   display: inline-block;
+  vertical-align: top;
 }
 .upper-footer .line {
   height: $upper-div-height;
@@ -68,7 +70,7 @@ $upper-div-height: 140px;
 
 .upper-footer-ps, .upper-footer-s {
   display: inline-block;
-
+  vertical-align: top;
 }
 
 .upper-footer-ps ul{
@@ -100,4 +102,20 @@ $upper-div-height: 140px;
 
 .upper-footer .stripe {
   padding-left: 100px;
+}
+
+.upper-footer-s {
+  margin-left: -20px;
+}
+
+.upper-footer-products {
+  margin-left: -20px;
+}
+
+.subscribe .subscribe-button {
+  width: 175px;
+}
+
+.lower-footer div.better a {
+  color: #0088CC;
 }
