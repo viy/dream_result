@@ -4,7 +4,12 @@
 <div class="services-main">
   <div class="nav-menu">
     <div class="cart">
-
+      <div class="name">
+        <%= t 'cart.name' %>
+      </div>
+      <div class="content">
+        <%= t 'cart.empty' %>
+      </div>
     </div>
     <div class="services_accordion">
       <h5 id="all" ><a href="#"> <%= t 'services.all'  %></a></h5>
@@ -83,21 +88,29 @@
         </div>
         <div class="prices">
           <div class="car-logo">
-
+            <div class="car1"> </div>
+            <div class="car2"></div>
+            <div class="car3"></div>
+            <div class="car4"></div>
           </div>
           <div class="price">
-
+            <div><span>990</span> <%=t 'curency'  %></div>
+            <div><span>1190</span> <%=t 'curency'  %></div>
+            <div><span>1390</span> <%=t 'curency'  %></div>
+            <div><span>1590</span> <%=t 'curency'  %></div>
           </div>
         </div>
         <div class="description">
-
+          <%= t 'programs.basic_long_desc' %>
         </div>
         <div class="buttons">
           <div class="order">
-
+            <button class="btn btn-danger">
+              <i class="icon-shopping-cart"> </i> <%= t 'programs.order' %>
+            </button>
           </div>
           <div class="include">
-
+            <a href="#"> <%= t 'programs.inclusion' %></a>
           </div>
         </div>
       </div><div class="express">
@@ -105,31 +118,129 @@
       </div>
       <div class="prices">
         <div class="car-logo">
-
+          <div class="car1"> </div>
+          <div class="car2"></div>
+          <div class="car3"></div>
+          <div class="car4"></div>
         </div>
         <div class="price">
-
+          <div><span>220</span> <%=t 'curency'  %></div>
+          <div><span>300</span> <%=t 'curency'  %></div>
+          <div><span>390</span> <%=t 'curency'  %></div>
+          <div><span>460</span> <%=t 'curency'  %></div>
         </div>
       </div>
       <div class="description">
-
+        <%= t 'programs.express_long_desc' %>
       </div>
       <div class="buttons">
         <div class="order">
-
+          <button class="btn btn-danger">
+            <i class="icon-shopping-cart"> </i> <%= t 'programs.order' %>
+          </button>
         </div>
         <div class="include">
-
+          <a href="#"> <%= t 'programs.inclusion' %></a>
         </div>
       </div>
     </div>
-    </div>    
+    </div>
   </div>
-  <div class="item-navigation">
-
-  </div>
-  <div class="items">
-
+  <div class="tabbable service-items"> <!-- Only required for left/right tabs -->
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#tab1" data-toggle="tab"><%= t 'services.all_short' %></a></li>
+      <li><a href="#tab2" data-toggle="tab"><%= t 'programs.basic' %></a></li>
+      <li><a href="#tab3" data-toggle="tab"><%= t 'programs.express' %></a></li>
+      <li><a href="#tab4" data-toggle="tab"><%= t 'programs.additional' %></a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active" id="tab1">
+        <div class="item">
+          <div class="pic"><img src="<%= image_path("service_item.jpg") %>"></div>
+          <div class="item-description">
+            <div class="name"><%= t 'services.types.deep_cleaning' %></div>
+            <div class="options">
+              <div class="basic">
+                <div class="name"><%= t 'programs.basic_name' %>:</div>
+                <span class="value"><%= t 'included' %> </span>
+              </div>
+              <div class="express buy">
+                <div class="name"><%= t 'programs.express_name' %>:</div>
+                <span class="value"> 210 <%= t 'curency' %> </span>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <div class="buy-button">
+                <button class="btn btn-inverse"><i class="icon-shopping-cart icon-white"></i> <%= t 'programs.order' %>
+                </button>
+            </div>
+            <div class="detail">
+              <a href="#"><%=t 'detail' %></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="pic"><img src="<%= image_path("service_item.jpg") %>"></div>
+          <div class="item-description">
+            <div class="name"><%= t 'services.types.oil_cleaning' %></div>
+            <div class="options">
+              <div class="basic">
+                <div class="name"><%= t 'programs.basic_name' %>:</div>
+                <span class="value"><%= t 'included' %> </span>
+              </div>
+              <div class="express buy">
+                <div class="name"><%= t 'programs.express_name' %>:</div>
+                <span class="value"> 210 <%= t 'curency' %> </span>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <div class="buy-button">
+              <button class="btn btn-inverse"><i class="icon-shopping-cart icon-white"></i> <%= t 'programs.order' %>
+              </button>
+            </div>
+            <div class="detail">
+              <a href="#"><%=t 'detail' %></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="pic"><img src="<%= image_path("service_item.jpg") %>"></div>
+          <div class="item-description">
+            <div class="name"><%= t 'services.types.predpocessing' %></div>
+            <div class="options">
+              <div class="basic">
+                <div class="name"><%= t 'programs.basic_name' %>:</div>
+                <span class="value"><%= t 'included' %> </span>
+              </div>
+              <div class="express buy">
+                <div class="name"><%= t 'programs.express_name' %>:</div>
+                <span class="value"> 210 <%= t 'curency' %> </span>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <div class="buy-button">
+              <button class="btn btn-inverse"><i class="icon-shopping-cart icon-white"></i> <%= t 'programs.order' %>
+              </button>
+            </div>
+            <div class="detail">
+              <a href="#"><%=t 'detail' %></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="tab2">
+        <p>Howdy, I'm in Section 2.</p>
+      </div>
+      <div class="tab-pane" id="tab3">
+        <p>Howdy, I'm in Section 2.</p>
+      </div>
+      <div class="tab-pane" id="tab4">
+        <p>Howdy, I'm in Section 2.</p>
+      </div>
+    </div>
   </div>
   <div class="item-bottom-navigation">
 
