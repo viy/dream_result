@@ -1,0 +1,48 @@
+.top-banner
+  %img{ :src => image_path("top_banner.jpg"), :alt => ""}
+.services-main
+  = render( :partial => 'nav_menu')
+  .service-content
+    .service-name
+      = t 'services.thorough.defect_removal.name'
+    .service
+      .background-div
+        .top-div
+        .line
+        .bottom-div
+      .main-description
+        .service-image
+          %img{:src => image_path("programs/udaleniegologramm_l.jpg"), :alt => ""}
+        .service
+          .description
+            .title
+              = t 'services.thorough.description'
+            .text
+              = t 'services.thorough.defect_removal.text'
+          .features
+            .title
+              = t 'services.thorough.features'
+            .images
+              %img{:src => image_path("features/bezopasnodlyalaka.png"), :alt => ""}
+              %img{:src => image_path("features/dapolisher.png"), :alt => ""}
+              %img{:src => image_path("features/idealnoesostoyanie.png"), :alt => ""}
+              %img{:src => image_path("features/step2.png"), :alt => ""}
+          .photo
+            %button.btn
+              = t 'services.thorough.photo'
+          .prices
+            .title
+              = t 'services.thorough.price'
+            .basic
+              .name
+                = t 'programs.basic'
+              .price
+                = "310 #{ t 'curency'}"
+            .express
+              .name
+                = t 'programs.express'
+              .price
+                = "420 #{ t 'curency'}"
+          .order
+            %button.btn.btn-danger
+              = t 'programs.order'

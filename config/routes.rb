@@ -1,5 +1,5 @@
 Sto::Application.routes.draw do
-  get "services/index"
+  resource :services
 
   ActiveAdmin.routes(self)
 

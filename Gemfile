@@ -13,6 +13,7 @@ gem 'rr'
 gem 'jquery-ui-rails'
 gem 'bootstrap-sass', '~> 2.0.3'
 gem 'bourbon'
+gem 'haml-rails'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
