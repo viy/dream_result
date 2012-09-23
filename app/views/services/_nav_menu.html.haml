@@ -1,0 +1,12 @@
+.nav-menu
+  .cart
+    .name
+      = t 'cart.name'
+    .content
+      = t 'cart.empty'
+  .services_accordion
+    %h5#all
+      %a{:href=>"#"}
+        = t 'services.all'
+    %div
+    = render :partial => "shared/service_havigation"
