@@ -1,0 +1,76 @@
+.contacts {
+  height: 570px;
+  margin-top: 30px;
+  .navigation, .map-viewer {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .navigation {
+    .service-info{
+      position: relative;
+      margin-left: 110px;
+      width: 220px;
+      .service-name {
+        text-align: left;
+        color: #0088CC;
+        font-size: 14px;
+      }
+      .name, .content {
+        display: inline-block;
+        vertical-align: top;
+      }
+      .name{
+        width: 80px;
+        margin-right: 5px;
+        text-align: right;
+      }
+      .content{
+        width: 126px;
+      }
+      .work-time {
+        .content{
+          font-weight: bold;
+        }
+      }
+      .media-button{
+        margin-top: 5px;
+        button {
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+  }
+  .map-viewer {
+    position: relative;
+    padding-left: 30px;
+    .media-content{
+      height: 575px;
+      position: absolute;
+      width: 740px;
+      z-index: 100;
+      .header-content{
+        position: relative;
+        .header {
+          height: 43px;
+          width: 250px;
+          position: absolute;
+          top:-8px;
+          right: 120px;
+          background: image-url("namebox.png") no-repeat;
+          color: #d3d3d3;
+          font-size: 16px;
+          padding: 10px 0 0 ;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+      .map {
+        background: none repeat scroll 0 0 #FFFFFF;
+        height: 478px;
+        margin: 60px 0 0 40px;
+        width: 662px;
+      }
+    }
+  }
+}

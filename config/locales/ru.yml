@@ -41,8 +41,15 @@ ru:
   contacts:
     name: "Контакты"
     address: "Киев, ул. Малиновскгого 12, ТРЦ Метрополис, паркинг. "
-    phone: "тел.: +38 (044) 587 87 87"
+    phone: "+38 (044) 587 87 87"
     letter: "Написать письмо"
+    service_name: "DREAM SHINE #1"
+    address_name: "Адрес:"
+    phone_name: "Тел.:"
+    email: "Email:"
+    work_time: "Пн - Вс 09:00 - 21:00"
+    work_name: "Работаем:"
+    map_name: "Центры DREAM SHINE"
   materials:
     varnish: "Лак"
     metal: "Метал"

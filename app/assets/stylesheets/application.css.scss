@@ -10,3 +10,23 @@ body {
   margin-right: auto;
   width: 1200px;
 }
+
+.background-div {
+  position: absolute;
+  z-index: 0;
+  .top-div{
+    background: image-url("287x745top.png");
+    width: 745px;
+    height: 287px;
+  }
+  .line{
+    background: image-url("1x745middle.png");
+    width: 745px;
+    height: auto;
+  }
+  .bottom-div {
+    background: image-url("293x745bottom.png");
+    width: 745px;
+    height: 293px;
+  }
+}
