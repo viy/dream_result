@@ -40,7 +40,7 @@
   width: 100px;
 }
 
-.services-main .cart .content {
+.cart .content {
   color: red;
   font-size: 12px;
   font-style: italic;
@@ -266,116 +266,74 @@
     }
   }
 }
-
-
-.services-main {
-  .service-content{
+.service-name{
+  margin: 10px 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ff0000;
+}
+.prices {
+  .basic {
+    margin-bottom: 5px;
+  }
+  margin-top: 20px;
+  .title {
+    margin-bottom: 5px;
+    color: #0088CC;
+    font-size: 20px;
+    text-align: left;
+  }
+  .name, .price {
     display: inline-block;
     vertical-align: top;
-    width: 745px;
-    height: 650px;
-    position: relative;
-    .service-name{
-      margin: 10px 30px;
-      font-size: 20px;
-      text-transform: uppercase;
-      color: #ff0000;
-    }
-    .service {
-      .background-div {
-        position: absolute;
-        z-index: 0;
-        .top-div{
-          background: image-url("287x745top.png");
-          width: 745px;
-          height: 287px;
-        }
-        .line{
-          background: image-url("1x745middle.png");
-          width: 745px;
-          height: auto;
-        }
-        .bottom-div {
-          background: image-url("293x745bottom.png");
-          width: 745px;
-          height: 293px;
-        }
-      }
-      .main-description {
-        z-index: 50;
-        position: absolute;
-        .service-image {
-          width: 240px;
-          height: 240px;
-          display: inline-block;
-          vertical-align: top;
-          margin: 25px;
-        }
-        .service {
-          display: inline-block;
-          vertical-align: top;
-          width: 420px;
-          position: relative;
-          .title {
-            text-align: left;
-            color: #0088CC;
-            font-size: 20px;
-          }
-          .description{
-            width: auto;
-            height: auto;
-            margin: 20px -5px;
-            .text{
-              margin-top: 5px;
-              text-align: justify;
-              font-size: 14px;
-            }
-          }
-          .features{
-            .title {
-              margin: 0px 0px 5px;
-              padding-top: 50px;
-            }
-            .images {
-              img {
-                margin: 0 5px;
-              }
-            }
-          }
-          .photo{
-            margin-top: 10px;
-            button{
-              height: 40px;
-            }
-          }
-          .prices {
-            .basic {
-              margin-bottom: 5px;
-            }
-            margin-top: 20px;
-            .title {
-              margin-bottom: 5px;
-            }
-            .name, .price {
-              display: inline-block;
-              vertical-align: top;
-            }
-            .name {
-              width: 140px;
-            }
-            .price {
-              color: #ff0000;
-              font-size: 20px;
-            }
-          }
-          .order {
-            button {
-              margin-top: 20px;
-              margin-left: 320px;
-            }
-          }
-        }
-      }
-    }
+  }
+  .name {
+    width: 140px;
+  }
+  .price {
+    color: #ff0000;
+    font-size: 20px;
   }
 }
+
+.background-div {
+  position: absolute;
+  z-index: 0;
+  .top-div{
+    background: image-url("287x745top.png");
+    width: 745px;
+    height: 287px;
+  }
+  .line{
+    background: image-url("1x745middle.png");
+    width: 745px;
+    height: auto;
+  }
+  .bottom-div {
+    background: image-url("293x745bottom.png");
+    width: 745px;
+    height: 293px;
+  }
+}
+
+.used-products{
+  margin-left: 240px;
+  margin-top: 50px;
+  width: 725px;
+  .name {
+    text-align: left;
+    color: #0088CC;
+    font-size: 20px;
+  }
+  .line {
+    height: 1px;
+    width: auto;
+    background-color: #BBBBBB;
+    margin: 5px 0;
+  }
+  .products {
+
+  }
+}
+@import "show_services.css.scss";
+@import "media_services.css.scss";

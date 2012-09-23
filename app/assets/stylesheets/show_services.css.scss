@@ -1,0 +1,66 @@
+.services-main {
+  .service-content{
+    display: inline-block;
+    vertical-align: top;
+    width: 745px;
+    height: 650px;
+    position: relative;
+    .service {
+      .main-description {
+        z-index: 50;
+        position: absolute;
+        .service-image {
+          width: 240px;
+          height: 240px;
+          display: inline-block;
+          vertical-align: top;
+          margin: 55px 30px 30px 36px;
+        }
+        .service {
+          display: inline-block;
+          vertical-align: top;
+          width: 390px;
+          position: relative;
+          .title {
+            text-align: left;
+            color: #0088CC;
+            font-size: 20px;
+          }
+          .description{
+            width: auto;
+            height: auto;
+            margin: 30px -5px;
+            .text{
+              margin-top: 5px;
+              text-align: justify;
+              font-size: 14px;
+              height: 230px;
+              overflow: hidden;
+            }
+          }
+          .features{
+            .title {
+              margin: 0px 0px 5px;
+            }
+            .images {
+              img {
+                margin: 0 5px;
+              }
+            }
+          }
+          .photo{
+            margin-top: 10px;
+            button{
+              height: 40px;
+            }
+          }
+          .order {
+            button {
+              margin-left: 303px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

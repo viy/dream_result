@@ -1,5 +1,13 @@
 Sto::Application.routes.draw do
-  resource :services
+  resources :products
+
+  resources :services do
+    collection do
+      get :media
+    end
+  end
+  match 'contacts' => 'galary#contacts'
+
 
   ActiveAdmin.routes(self)
 

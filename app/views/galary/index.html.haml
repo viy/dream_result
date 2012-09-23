@@ -1,0 +1,27 @@
+.main_carousel
+  .main_gallery_controls
+    .galary_pagination
+      #main_carousel_pag
+
+  .main_carousel_container
+    %img{:src=> image_path("top_banner01.jpg"), :alt=>"" } 
+    %img{ :src=> image_path("top_banner02.jpg"), :alt=>"" }
+    %img{ :src=> image_path("top_banner03.jpg"), :alt=>"" }
+    %img{ :src=> image_path("top_banner04.jpg"), :alt=>"" }
+.image_carousel
+
+  #slider1.slider1
+    %img{ :src=> image_path("galary/slide_avtomoikaabonement.jpg"), :alt=>""}
+    %img{ :src=> image_path("galary/slide_avtomoikagarantiya.jpg")}
+    %img{ :src=> image_path("galary/slide_lutshayaavtomoika.jpg"), :alt=>""}
+    %img{ :src=> image_path("galary/slide_moikaparom.jpg"), :alt=>""}
+    %img{ :src=> image_path("galary/slide_meguiars.jpg") }
+    %img{ :src=> image_path("galary/slide_lutshayaavtomoika.jpg"), :alt=>""}
+  .clearfix
+  .gallery_controls
+    %a#slider1_prev.prev{:href=>"#"}
+      %span
+        prev
+    %a.next#slider1_next{ :href=>"#"}
+      %span
+        next

@@ -9,3 +9,20 @@ jQuery ->
 
   $('#all').unbind('mouseover')
   $('.services_accordion').accordion('activate', 1)
+  $('.media-carousel .carousel-container').carouFredSel
+    height: 100
+    width:390
+    items:
+      visible: 3
+      minimum: 3
+    auto:
+      duration: 10000
+    scroll:
+      items: 3
+      duration: 1000
+    prev:
+      button: ".media .arrows .prev"
+      key: "left"
+    next:
+      button: ".media .arrows .next"
+      key: "right"

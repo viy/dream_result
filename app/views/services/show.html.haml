@@ -35,14 +35,22 @@
               = t 'services.thorough.price'
             .basic
               .name
-                = t 'programs.basic'
+                = t 'programs.in_basic'
               .price
                 = "310 #{ t 'curency'}"
             .express
               .name
-                = t 'programs.express'
+                = t 'programs.in_express'
               .price
                 = "420 #{ t 'curency'}"
           .order
             %button.btn.btn-danger
               = t 'programs.order'
+  .used-products
+    .name
+      = t 'products.used_products'
+    .line
+    .products
+      %img{:src => image_path("meguaers/meguiars_scratchx_s.jpg"), :alt =>""}
+      %img{:src => image_path("meguaers/meguiars_swirlxl_s.jpg"), :alt =>""}
+      %img{:src => image_path("meguaers/meguiars_ultimatecompound_s.jpg"), :alt =>""}

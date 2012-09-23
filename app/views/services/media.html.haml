@@ -1,0 +1,55 @@
+.top-banner
+  %img{ :src => image_path("top_banner.jpg"), :alt => ""}
+.media-main
+  = render( :partial => 'nav_menu')
+  .media-content
+    .service-name
+      = t 'services.thorough.defect_removal.name'
+    .media
+      .background-div
+        .top-div
+        .line
+        .bottom-div
+      .media-description
+        .text-description
+          = t 'services.message1'
+        .media-picker
+          .media-view
+          .media-carousel
+            .carousel-container
+              %img{:width => "130px", :heiight => "100px", :src => image_path("meguaers/meguiars_scratchx_s.jpg")}
+              %img{:width => "130px", :heiight => "100px", :src => image_path("meguaers/meguiars_scratchx_s.jpg")}
+              %img{:width => "130px", :heiight => "100px", :src => image_path("meguaers/meguiars_scratchx_s.jpg")}
+              %img{:width => "130px", :heiight => "100px", :src => image_path("meguaers/meguiars_scratchx_s.jpg")}
+              %img{:width => "130px", :heiight => "100px", :src => image_path("meguaers/meguiars_scratchx_s.jpg")}
+              %img{:width => "130px", :heiight => "100px", :src => image_path("meguaers/meguiars_scratchx_s.jpg")}
+            .clearfix
+            .arrows
+              .prev
+              .next
+          .prices
+            .title
+              = t 'services.thorough.price'
+            .basic
+              .name
+                = t 'programs.in_basic'
+              .price
+                = "310 #{ t 'curency'}"
+            .express
+              .name
+                = t 'programs.in_express'
+              .price
+                = "420 #{ t 'curency'}"
+        .nav-buttons
+          %a
+            = t 'back'
+          %button.btn.btn-danger
+            = t 'programs.order'
+  .used-products
+    .name
+      = t 'products.used_products'
+    .line
+    .products
+      %img{:src => image_path("meguaers/meguiars_scratchx_s.jpg"), :alt =>""}
+      %img{:src => image_path("meguaers/meguiars_swirlxl_s.jpg"), :alt =>""}
+      %img{:src => image_path("meguaers/meguiars_ultimatecompound_s.jpg"), :alt =>""}
