@@ -3,317 +3,302 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "jquery-ui-1.8.23.custom.css";
 
-.services-main {
-  margin-top: 10px;
-  margin-left: 120px;
-}
+#services_controller{
+  .services-main {
+    margin-top: 10px;
+    margin-left: 120px;
+  }
 
-.services_accordion {
-  width: 210px;
-}
-.ui-accordion .ui-accordion-header a {
-  font-size: 14px;
-}
+  .nav-menu .cart {
+    width: 220px;
+    height: 70px;
+    background: image-url("shopcart220.png") no-repeat;
+  }
 
-.services_accordion ol {
-  list-style-type : none;
-  margin: -10px 0 0px -8px;
-  font-size: 15px;
-}
+  .cart .name {
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 50px;
+    padding-top: 10px;
+    text-align: center;
+    width: 100px;
+  }
 
-.services_accordion li a {
-  cursor: pointer;
-}
+  .cart .content {
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 45px;
+    padding-top: 8px;
+    text-align: center;
+  }
+  .nav-menu {
+    display: inline-block;
+  }
+  .services-items {
+    display: inline-block;
+    vertical-align: top;
+  }
 
-.nav-menu .cart {
-  width: 220px;
-  height: 70px;
-  background: image-url("shopcart220.png") no-repeat;
-}
+  .service-header {
+    width: 745px;
+    height: 220px;
+    background: image-url("220x744red.png") no-repeat 0 0 transparent;
+    color: #777777;
+    font-size: 17px;
+    padding-left: 10px;
+  }
 
-.cart .name {
-  font-size: 20px;
-  font-style: italic;
-  margin-left: 50px;
-  padding-top: 10px;
-  text-align: center;
-  width: 100px;
-}
-
-.cart .content {
-  color: red;
-  font-size: 12px;
-  font-style: italic;
-  margin-left: 45px;
-  padding-top: 8px;
-  text-align: center;
-}
-.nav-menu {
-  display: inline-block;
-}
-.services-items {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.service-header {
-  width: 745px;
-  height: 220px;
-  background: image-url("220x744red.png") no-repeat 0 0 transparent;
-  color: #777777;
-  font-size: 17px;
-  padding-left: 10px;
-}
-
-.service-header span.red{
-   color: red;
-}
-
-.messagge2, .messagge1, .messagge-bold {
-  padding: 15px 15px 0px 15px;
-  font-family: 'Myriad Pro','Liberation Sans',sans-serif;
-}
-
-.messagge-bold{
-  font-weight: bold;
-  padding: 35px 15px 15px 15px;
-}
-
-.messagge-icon {
-  float: right;
-  margin-right: 35px;
-  margin-top: -15px;
-  width: 20px;
-}
-
-.programms {
-}
-
-.programms .basic, .programms .express {
-  background: image-url("box_365x395.png") no-repeat scroll 0 0 transparent;
-  display: inline-block;
-  width: 365px;
-  height: 395px;
-  margin: 20px 0 10px 5px;
-  vertical-align: top;
-}
-
-.shild {
-  width: 130px;
-  height: 135px;
-  margin: 25px 0 0 25px;
-  display: inline-block;
-  vertical-align: top;
-}
-.shild .name {
-  font-family: sans-serif;
-  font-size: 16px;
-  font-style: italic;
-  padding-left: 13px;
-  padding-top: 19px;
-  text-align: center;
-  width: 103px;
-  text-shadow: 1px 1px white;
-}
-
-.shild .name .p_name{
-  font-size: 20px;
-}
-
-.shild .name .program{
-  font-size: 14px;
-}
-.basic .shild {
-  background-image: image-url("ultimate_detailing_s.png");
-}
-
-.express .shild {
-  background-image: image-url("expressdetailing_s.png");
-}
-.car-logo, .prices, .price {
-  vertical-align: top;
-  display: inline-block;
-}
-
-.car-logo > div {
-  width: 110px;
-  height: 41px;
-  vertical-align: top;
-}
-
-.prices {
-  margin-top: 20px;
-}
-.price {
-
-}
-.price div {
-  color: red;
-  font-size: 12px;
-  font-style: italic;
-  margin-left: 7px;
-  margin-top: 18px;
-}
-.price span{
-  color: red;
-  font-size: 20px;
-  font-style: italic;
-}
-
-.car1 {
-  background: image-url("group1_m.png") no-repeat 0 0 transparent;
-}
-
-.car2 {
-  background: image-url("group2_m.png") no-repeat 0 0 transparent;
-}
-
-.car3 {
-  background: image-url("group3_m.png") no-repeat 0 0 transparent;
-}
-
-.car4 {
-  background: image-url("group4_m.png") no-repeat 0 0 transparent;
-}
-
-.description {
-  width: 315px;
-  text-align: justify;
-  margin: 10px 0 0 28px;
-  height: 130px;
-}
-
-.buttons .order, .buttons .include {
-  display: inline-block;
-  vertical-align: top;
-  margin: 15px 0 0 30px;
-}
-
-.buttons .include {
-  float: right;
-  margin-top: 23px;
-  margin-right: 20px;
-}
-
-.service-items {
-  margin-left: 240px;
-  width: 720px;
-  a {
+  .service-header span.red{
     color: red;
   }
-}
-.tab-pane {
-  padding-left: 5px;
-}
-.item {
-  border: 1px solid graytext;
-  height: 205px;
-  width: 330px;
-  margin: 10px;
-  display: inline-block;
 
-  .pic {
+  .messagge2, .messagge1, .messagge-bold {
+    padding: 15px 15px 0px 15px;
+    font-family: 'Myriad Pro','Liberation Sans',sans-serif;
+  }
+
+  .messagge-bold{
+    font-weight: bold;
+    padding: 35px 15px 15px 15px;
+  }
+
+  .messagge-icon {
+    float: right;
+    margin-right: 35px;
+    margin-top: -15px;
+    width: 20px;
+  }
+
+  .programms {
+  }
+
+  .programms .basic, .programms .express {
+    background: image-url("box_365x395.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    width: 365px;
+    height: 395px;
+    margin: 20px 0 10px 5px;
+    vertical-align: top;
+  }
+
+  .shild {
+    width: 130px;
+    height: 135px;
+    margin: 25px 0 0 25px;
     display: inline-block;
     vertical-align: top;
-    img {
-      width: 130px;
-      height: 130px;
-    margin: 10px;
-    }
+  }
+  .shild .name {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    padding-left: 13px;
+    padding-top: 19px;
+    text-align: center;
+    width: 103px;
+    text-shadow: 1px 1px white;
   }
 
-  .item-description {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 10px;
-
-    div.name {
-      font-size: 17px;
-      width: 165px;
-      height: 95px;
-    }
-    .options div{
-      font-style: italic;
-      div.name {
-        font-size: 15px;
-        font-weight: bold;
-        font-style: normal;
-        height: 16px;
-        width: 75px;
-        display: inline-block;
-      }
-    }
-    .options div.buy{
-      span.value{
-        color: red;
-        font-size: 20px;
-        font-style: italic;
-      }
-    }
-  }
-  .buttons{
-    div {
-      display: inline-block;
-      vertical-align: top;
-      margin: 17px 10px 10px;
-    }
-    .detail{
-      float: right;
-      margin-top: 29px;
-      a {
-        color: #0088CC;
-      }
-    }
-  }
-}
-.service-name{
-  margin: 10px 30px;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #ff0000;
-}
-.prices {
-  .basic {
-    margin-bottom: 5px;
-  }
-  margin-top: 20px;
-  .title {
-    margin-bottom: 5px;
-    color: #0088CC;
+  .shild .name .p_name{
     font-size: 20px;
-    text-align: left;
   }
-  .name, .price {
+
+  .shild .name .program{
+    font-size: 14px;
+  }
+  .basic .shild {
+    background-image: image-url("ultimate_detailing_s.png");
+  }
+
+  .express .shild {
+    background-image: image-url("expressdetailing_s.png");
+  }
+  .car-logo, .prices, .price {
+    vertical-align: top;
     display: inline-block;
+  }
+
+  .car-logo > div {
+    width: 110px;
+    height: 41px;
     vertical-align: top;
   }
-  .name {
-    width: 140px;
+
+  .prices {
+    margin-top: 20px;
   }
   .price {
+
+  }
+  .price div {
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 7px;
+    margin-top: 18px;
+  }
+  .price span{
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  .car1 {
+    background: image-url("group1_m.png") no-repeat 0 0 transparent;
+  }
+
+  .car2 {
+    background: image-url("group2_m.png") no-repeat 0 0 transparent;
+  }
+
+  .car3 {
+    background: image-url("group3_m.png") no-repeat 0 0 transparent;
+  }
+
+  .car4 {
+    background: image-url("group4_m.png") no-repeat 0 0 transparent;
+  }
+
+  .description {
+    width: 315px;
+    text-align: justify;
+    margin: 10px 0 0 28px;
+    height: 130px;
+  }
+
+  .buttons .order, .buttons .include {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 0 0 30px;
+  }
+
+  .buttons .include {
+    float: right;
+    margin-top: 23px;
+    margin-right: 20px;
+  }
+
+  .service-items {
+    margin-left: 240px;
+    width: 720px;
+    a {
+      color: red;
+    }
+  }
+  .tab-pane {
+    padding-left: 5px;
+  }
+  .item {
+    border: 1px solid graytext;
+    height: 205px;
+    width: 330px;
+    margin: 10px;
+    display: inline-block;
+
+    .pic {
+      display: inline-block;
+      vertical-align: top;
+      img {
+        width: 130px;
+        height: 130px;
+        margin: 10px;
+      }
+    }
+
+    .item-description {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 10px;
+
+      div.name {
+        font-size: 17px;
+        width: 165px;
+        height: 95px;
+      }
+      .options div{
+        font-style: italic;
+        div.name {
+          font-size: 15px;
+          font-weight: bold;
+          font-style: normal;
+          height: 16px;
+          width: 75px;
+          display: inline-block;
+        }
+      }
+      .options div.buy{
+        span.value{
+          color: red;
+          font-size: 20px;
+          font-style: italic;
+        }
+      }
+    }
+    .buttons{
+      div {
+        display: inline-block;
+        vertical-align: top;
+        margin: 17px 10px 10px;
+      }
+      .detail{
+        float: right;
+        margin-top: 29px;
+        a {
+          color: #0088CC;
+        }
+      }
+    }
+  }
+  .service-name{
+    margin: 10px 30px;
+    font-size: 20px;
+    text-transform: uppercase;
     color: #ff0000;
-    font-size: 20px;
   }
-}
+  .prices {
+    .basic {
+      margin-bottom: 5px;
+    }
+    margin-top: 20px;
+    .title {
+      margin-bottom: 5px;
+      color: #0088CC;
+      font-size: 20px;
+      text-align: left;
+    }
+    .name, .price {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .name {
+      width: 140px;
+    }
+    .price {
+      color: #ff0000;
+      font-size: 20px;
+    }
+  }
 
-.used-products{
-  margin-left: 240px;
-  margin-top: 50px;
-  width: 725px;
-  .name {
-    text-align: left;
-    color: #0088CC;
-    font-size: 20px;
-  }
-  .line {
-    height: 1px;
-    width: auto;
-    background-color: #BBBBBB;
-    margin: 5px 0;
-  }
-  .products {
+  .used-products{
+    margin-left: 240px;
+    margin-top: 50px;
+    width: 725px;
+    .name {
+      text-align: left;
+      color: #0088CC;
+      font-size: 20px;
+    }
+    .line {
+      height: 1px;
+      width: auto;
+      background-color: #BBBBBB;
+      margin: 5px 0;
+    }
+    .products {
 
+    }
   }
+  @import "show_services.css.scss";
+  @import "media_services.css.scss";
 }
-@import "show_services.css.scss";
-@import "media_services.css.scss";

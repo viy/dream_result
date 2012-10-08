@@ -7,7 +7,7 @@
 
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body id="<%= params[:controller].parameterize %>_controller">
 <%= render "layouts/header" %>
 <div id="content">
   <%= yield %>

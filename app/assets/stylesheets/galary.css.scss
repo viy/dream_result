@@ -2,109 +2,111 @@
 // They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.image_carousel {
-  padding: 15px 0 15px 15%;
-  width: 500px;
-}
+#galary_controller {
+  .image_carousel {
+    padding: 15px 0 15px 15%;
+    width: 500px;
+  }
 
-.slider1 img {
-  height: 133px;
-  width: 270px;
-}
+  .slider1 img {
+    height: 133px;
+    width: 270px;
+  }
 
-.gallery_controls {
-  width: 950px;
-  margin-top: -20%;
-  margin-bottom: 7%;
-  margin-left: -10%;
-}
+  .gallery_controls {
+    width: 950px;
+    margin-top: -20%;
+    margin-bottom: 7%;
+    margin-left: -10%;
+  }
 
-.image_carousel img {
-  background-color: white;
-  margin: 7px;
-  display: block;
-  float: left;
-}
-.clearfix {
-  float: none;
-  clear: both;
-}
+  .image_carousel img {
+    background-color: white;
+    margin: 7px;
+    display: block;
+    float: left;
+  }
+  .clearfix {
+    float: none;
+    clear: both;
+  }
 
-a.next {
-  float: right;
-}
+  a.next {
+    float: right;
+  }
 
-a.prev, a.next {
-  background: image-url("miscellaneous_sprite.png") no-repeat transparent;
-  width: 45px;
-  height: 50px;
-  display: inline-table;
-  top: 85px;
-}
+  a.prev, a.next {
+    background: image-url("miscellaneous_sprite.png") no-repeat transparent;
+    width: 45px;
+    height: 50px;
+    display: inline-table;
+    top: 85px;
+  }
 
-a.prev {
-  left: -22px;
-  background-position: 0 0;
-}
+  a.prev {
+    left: -22px;
+    background-position: 0 0;
+  }
 
-a.prev:hover {
-  background-position: 0 -50px;
-}
+  a.prev:hover {
+    background-position: 0 -50px;
+  }
 
-a.prev.disabled {   background-position: 0 -100px !important;  }
-a.next {
-  right: -22px;
-  background-position: -50px 0;
-}
+  a.prev.disabled {   background-position: 0 -100px !important;  }
+  a.next {
+    right: -22px;
+    background-position: -50px 0;
+  }
 
-a.next:hover {
-  background-position: -50px -50px;
-}
+  a.next:hover {
+    background-position: -50px -50px;
+  }
 
-a.next.disabled {   background-position: -50px -100px !important;  }
-a.prev.disabled, a.next.disabled {
-  cursor: default;
-}
+  a.next.disabled {   background-position: -50px -100px !important;  }
+  a.prev.disabled, a.next.disabled {
+    cursor: default;
+  }
 
-a.prev span, a.next span {
-  display: none;
-}
+  a.prev span, a.next span {
+    display: none;
+  }
 
-.galary_pagination {
-  text-align: center;
-  display: inline-block;
-  margin-top: 10%;
-  margin-left: 4%;
+  .galary_pagination {
+    text-align: center;
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 4%;
+
+  }
+  .galary_pagination a {
+    background: image-url("miscellaneous_sprite.png") 0 -300px no-repeat transparent;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 0 0;
+    display: inline-block;
+  }
+
+  .galary_pagination a.selected {
+    background-position: -25px -300px;
+    cursor: default;
+  }
+  .galary_pagination a span {
+    display: none;
+  }
+
+  .main_gallery_controls {
+    width: 100px;
+    z-index: 30;
+    left: 45%;
+    top:95px;
+    position: absolute;
+  }
+
+  .main_carousel_container img {
+    height: 596px;
+    width: 1200px;
+  }
+
+  @import "galary_contacts.css.scss";
 
 }
-.galary_pagination a {
-  background: image-url("miscellaneous_sprite.png") 0 -300px no-repeat transparent;
-  width: 15px;
-  height: 15px;
-  margin: 0 5px 0 0;
-  display: inline-block;
-}
-
-.galary_pagination a.selected {
-  background-position: -25px -300px;
-  cursor: default;
-}
-.galary_pagination a span {
-  display: none;
-}
-
-.main_gallery_controls {
-  width: 100px;
-  z-index: 30;
-  left: 45%;
-  top:95px;
-  position: absolute;
-}
-
-.main_carousel_container img {
-  height: 596px;
-  width: 1200px;
-}
-
-@import "galary_contacts.css.scss";
-

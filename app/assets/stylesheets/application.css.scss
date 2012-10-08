@@ -1,9 +1,11 @@
-@import "galary";
 @import "bourbon";
 @import "bootstrap";
+//= require_self
+@import "galary.css.scss";
 @import "header.css.scss";
 @import "footer.css.scss";
 @import "services.css.scss";
+@import "products.css.scss";
 
 body {
   margin-left: auto;
@@ -29,4 +31,22 @@ body {
     width: 745px;
     height: 293px;
   }
+}
+
+.services_accordion {
+  width: 210px;
+}
+
+.ui-accordion .ui-accordion-header a {
+  font-size: 14px;
+}
+
+.services_accordion ol {
+  list-style-type : none;
+  margin: -10px 0 0px -8px;
+  font-size: 15px;
+}
+
+.services_accordion li a {
+  cursor: pointer;
 }
