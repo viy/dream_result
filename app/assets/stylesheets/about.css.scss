@@ -1,0 +1,259 @@
+#about_controller{
+  .about-main {
+    width: 975px;
+    padding-left: 120px;
+    margin-top: 30px;
+    .add-blue-box{
+      display: inline-block;
+      vertical-align: top;
+      background: image-url("about/about_blue_box.png") no-repeat;
+      font-family: Georgia;
+      font-size: 19px;
+      font-style: italic;
+      height: 195px;
+      line-height: 21px;
+      padding: 43px 20px;
+      text-align: justify;
+      width: 180px;
+    }
+    .main_info{
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      background: image-url("about/about_index_box.png");
+      height: 365px;
+      width: 745px;
+      margin-top: -15px;
+      .title{
+        color: whitesmoke;
+        font-size: 18px;
+        font-weight: bolder;
+        position: absolute;
+        right: 120px;
+        top: 17px;
+      }
+      .text_columns{
+        padding: 60px 40px 10px;
+        .left-column, .right-column{
+          display: inline-block;
+          font-size: 15px;
+          height: 260px;
+          text-align: justify;
+          vertical-align: top;
+          width: 310px;
+        }
+        .right-column{
+          margin-left: 35px;
+        }
+      }
+    }
+    .about-reason{
+      .title{
+        color:red;
+        font-size: 20px;
+        font-style: italic;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        padding-bottom: 0;
+      }
+      .reason-boxes{
+        .reason{
+          display: inline-block;
+          vertical-align: top;
+          font-size: 13px;
+          height: 85px;
+          margin-right: 10px;
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 60px;
+          text-align: center;
+          width: 190px;
+        }
+        .reason1{
+            background: image-url("about/box1a.png") no-repeat;
+        }
+        .reason2{
+          background: image-url("about/box2a.png") no-repeat;
+        }
+        .reason3{
+          background: image-url("about/box3a.png") no-repeat;
+        }
+        .reason4{
+          background: image-url("about/box4a.png") no-repeat;
+        }
+        .blue1{
+          background: image-url("about/box1b.png") no-repeat;
+        }
+        .blue2{
+          background: image-url("about/box2b.png") no-repeat;
+        }
+        .blue3{
+          background: image-url("about/box3b.png") no-repeat;
+        }
+        .blue4{
+          background: image-url("about/box4b.png") no-repeat;
+        }
+      }
+    }
+    .main-description{
+      width: 960px;
+      background: image-url("about/box0.png") no-repeat;
+      height: 165px;
+      .title {
+        color: #0088CC;
+        font-size: 25px;
+        font-style: italic;
+        padding-left: 20px;
+        padding-top: 20px;
+      }
+      .descr{
+        font-size: 17px;
+        padding-left: 20px;
+        padding-top: 20px;
+      }
+    }
+    .blue{
+      color: #0088CC;
+    }
+    span.bold{
+      font-weight: bold;
+    }
+
+    .nav-buttons {}
+    .concept{
+      position: relative;
+      .circle {
+        display: inline-block;
+        vertical-align: top;
+      }
+      .descr {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: lighter;
+        margin-left: 30px;
+        margin-top: 30px;
+        vertical-align: top;
+        width: 343px;
+      }
+      .remark {
+        left: 335px;
+        position: absolute;
+        top: 95px;
+      }
+      .invite{
+        position: absolute;
+        color: #0088cc;
+        font-size: 15px;
+        font-style: italic;
+        width: 300px;
+        right: 0;
+        top: 125px;
+      }
+    }
+    .steps > div{
+      margin-top: 30px;
+      font-size: 15px;
+    }
+    .second-step-detailed{
+      position: relative;
+      background: image-url("about/miles-box.png") no-repeat;
+      width: 960px;
+      height: 510px;
+      margin-top: 30px;
+      .first-mile,.second-mile {
+        position: absolute;
+        width: 370px;
+        top: 30px;
+        text-align: justify;
+      }
+      .first-mile{
+        left: 60px;
+      }
+      .second-mile {
+        right: 50px;
+      }
+    }
+    .mag-info {
+      position: relative;
+      margin-top: 30px;
+      .description {
+        margin-left: 30px;
+        vertical-align: top;
+        display: inline-block;
+        width: 750px;
+        font-size: 17px;
+        margin-top: 30px;
+        text-align: justify;
+      }
+      .mag-icon {
+        background: image-url("about/meguiars_logo.png") no-repeat;
+        width: 175px;
+        height: 175px;
+        vertical-align: top;
+        display: inline-block;
+      }
+      .like{
+        position: absolute;
+        font-style: italic;
+        right: 30px;
+        top: 160px;
+      }
+    }
+    .princip{
+      margin-top: 30px;
+      width: 960px;
+      height: 416px;
+      background: image-url("about/box.png");
+      position: relative;
+      .title{
+        color: whitesmoke;
+        font-size: 18px;
+        font-weight: bolder;
+        position: absolute;
+        right: 210px;
+        top: 17px;
+        text-align: center;
+        width: 180px;
+      }
+      .descr{
+        font-size: 16px;
+        position: absolute;
+        right: 70px;
+        text-align: justify;
+        top: 100px;
+        width: 400px;
+      }
+    }
+    .history{
+      margin-left: 20px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      .citate, .pebel-beach{
+        display: inline-block;
+        vertical-align: top;
+        width: 460px;
+      }
+      .citate{
+        margin-right: 10px;
+        .name{
+          margin-bottom: 20px;
+          font-size: 15px;
+        }
+        .value {
+          font-style: italic;
+          img {
+            vertical-align: bottom;
+          }
+        }
+      }
+      .pebel-beach{
+        .icon > img{
+          width: 460px;
+        }
+        .descr{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

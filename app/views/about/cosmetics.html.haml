@@ -1,0 +1,33 @@
+.top-banner
+  %img{ :src => image_path("about/about_banner.jpg"), :alt => ""}
+.about-main
+  = render :partial => "first_step_heaer"
+  .nav-buttons.btn-group
+    %button.btn
+      1
+    %button.btn
+      2
+  .concept
+    %img.circle{:src=> image_path("about/arrows.png"), :alt=>""}
+    .descr
+      = t 'about.reason.reasons.reason1.concept.descr.html'
+    .remark
+      = t 'about.reason.reasons.reason1.concept.remark'
+    .invite
+      = t 'about.reason.reasons.reason1.concept.invite'
+  .steps
+    .first
+      = t 'about.reason.reasons.reason1.concept.first-step.html'
+    .second
+      = t 'about.reason.reasons.reason1.concept.second-step.html'
+    .second-step-detailed
+      .first-mile
+        = t 'about.reason.reasons.reason1.concept.first-mile.html'
+      .second-mile
+        = t 'about.reason.reasons.reason1.concept.second-mile.html'
+    .third
+      = t 'about.reason.reasons.reason1.concept.third-step.html'
+    .fourth
+      = t 'about.reason.reasons.reason1.concept.fourth-step.html'
+    .fifth
+      = t 'about.reason.reasons.reason1.concept.fifth-step.html'

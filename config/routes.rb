@@ -1,4 +1,8 @@
 Sto::Application.routes.draw do
+
+  get "about/index"
+  get "about/cosmetics"
+  get "about/meguiars"
   resources :products
 
   resources :services do

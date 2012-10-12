@@ -1,0 +1,29 @@
+.top-banner
+  %img{ :src => image_path("about/about_banner.jpg"), :alt => ""}
+.about-main
+  = render :partial => "first_step_heaer"
+  .nav-buttons
+  .mag-info
+    .mag-icon
+    .description
+      =t 'about.reason.reasons.reason1.mag-info.html'
+    .like.blue
+      =t 'about.reason.reasons.reason1.mag-info.like'
+  .princip
+    .title
+      = t "about.reason.reasons.reason1.mag-info.header"
+    .descr
+      = t "about.reason.reasons.reason1.mag-info.history.html"
+  .history
+    .citate
+      .name
+        = t 'about.reason.reasons.reason1.mag-info.citate.name'
+      .value
+        %img{:src => image_path("about/cuote_1.png")}
+        = t 'about.reason.reasons.reason1.mag-info.citate.citate'
+        %img{:src => image_path("about/cuote_2.png")}
+    .pebel-beach
+      .icon
+        %img{:src => image_path("about/Concours-dElegance-Logo.jpg")}
+      .descr
+        =t "about.reason.reasons.reason1.mag-info.peabel-beach.html"
