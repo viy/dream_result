@@ -1,0 +1,14 @@
+.top-banner
+  %img{ :src => image_path("about/about_banner.jpg"), :alt => ""}
+.about-main
+  = render :partial => "second_step_heaer"
+  .nav-buttons
+  .concept
+    %img.circle{:src=> image_path("about/eco.png"), :alt=>""}
+    .descr.steam_descr
+      = t 'about.reason.reasons.reason2.steam_eco.descr.html'
+    .invite.eco_invite
+      = t 'about.reason.reasons.reason2.steam_eco.like'
+  .vapour_graph.botles
+    .title
+      =t 'about.reason.reasons.reason2.steam_eco.title'

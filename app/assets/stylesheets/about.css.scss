@@ -105,6 +105,7 @@
         font-style: italic;
         padding-left: 20px;
         padding-top: 20px;
+        line-height: 23px;
       }
       .descr{
         font-size: 17px;
@@ -119,8 +120,18 @@
       font-weight: bold;
     }
 
-    .nav-buttons {}
+    .nav-buttons {
+      margin-top: -20px;
+      width: 300px;
+      margin-left: 18px;
+      .navbar-inner {
+        background: #DCDCDC;
+      }
+      .active > a:hover {
+      }
+    }
     .concept{
+      margin-top: 30px;
       position: relative;
       .circle {
         display: inline-block;
@@ -148,6 +159,23 @@
         width: 300px;
         right: 0;
         top: 125px;
+      }
+      .steam_descr{
+        margin-left: 0;
+        width: 740px;
+        text-align: justify;
+      }
+      .steam_invite{
+        width: 426px;
+        top: 155px;
+      }
+      .safety_invite{
+        top: 180px;
+        width: 775px;
+      }
+      .eco_invite{
+        top: 180px;
+        width: 460px;
       }
     }
     .steps > div{
@@ -254,6 +282,26 @@
           font-size: 14px;
         }
       }
+    }
+    .vapour_graph{
+      position: relative;
+      height: 415px;
+      width: 960px;
+      margin-top: 50px;
+      background: image-url("about/vapour_grpah.png") no-repeat;
+      .title {
+        color: whitesmoke;
+        font-size: 18px;
+        font-weight: bolder;
+        position: absolute;
+        right: 155px;
+        text-align: center;
+        top: 15px;
+        width: 300px;
+      }
+    }
+    .botles{
+      background: image-url("about/botles.png") no-repeat;
     }
   }
 }

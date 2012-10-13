@@ -3,6 +3,9 @@ Sto::Application.routes.draw do
   get "about/index"
   get "about/cosmetics"
   get "about/meguiars"
+  get "about/steam_force"
+  get "about/steam_safety"
+  get "about/steam_eco"
   resources :products
 
   resources :services do

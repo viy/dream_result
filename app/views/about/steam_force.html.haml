@@ -1,0 +1,11 @@
+.top-banner
+  %img{ :src => image_path("about/about_banner.jpg"), :alt => ""}
+.about-main
+  = render :partial => "second_step_heaer"
+  .nav-buttons
+  .concept
+    %img.circle{:src=> image_path("about/vapour_force.png"), :alt=>""}
+    .descr.steam_descr
+      = t 'about.reason.reasons.reason2.steam_force.descr.html'
+    .invite.steam_invite
+      = t 'about.reason.reasons.reason2.steam_force.descr.like'
