@@ -1,0 +1,25 @@
+.top-banner
+  %img{ :src => image_path("about/about_banner.jpg"), :alt => ""}
+.about-main
+  = render :partial => "navigation", :locals => {:active => 3}
+  .main-description
+    .title
+      = t 'about.reason.reasons.reason3.name'
+    .descr.third-step-descr
+      = t 'about.reason.reasons.reason3.descr.html'
+  .nav-buttons.third-step-btn
+    .navbar
+      .navbar-inner
+        %ul.nav
+          %li.active
+            %a{:href => "#"}
+              = t 'about.reason.reasons.reason3.buttons.first'
+  .employee
+    .description
+      .first-descr
+        =t "about.reason.reasons.reason3.first-descr"
+      .second-descr
+        =t "about.reason.reasons.reason3.second-descr"
+      .like
+        =t "about.reason.reasons.reason3.like"
+    .picture

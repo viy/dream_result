@@ -21,4 +21,8 @@ class AboutController < ApplicationController
   def steam_eco
 
   end
+
+  def employee
+
+  end
 end

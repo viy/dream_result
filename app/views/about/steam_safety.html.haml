@@ -2,7 +2,7 @@
   %img{ :src => image_path("about/about_banner.jpg"), :alt => ""}
 .about-main
   = render :partial => "second_step_heaer"
-  .nav-buttons
+  = render :partial => "second_buttons", :locals => {:active => :second}
   .concept
     %img.circle{:src=> image_path("about/safety.png"), :alt=>""}
     .descr.steam_descr

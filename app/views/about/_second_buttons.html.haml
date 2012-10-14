@@ -1,0 +1,13 @@
+.nav-buttons.second-step-btn
+  .navbar
+    .navbar-inner
+      %ul.nav
+        %li{:class => active == :first ? "active": ""}
+          %a{:href => about_steam_force_path}
+            = t 'about.reason.reasons.reason2.buttons.first'
+        %li{:class => active == :second ? "active": ""}
+          %a{:href => about_steam_safety_path}
+            = t 'about.reason.reasons.reason2.buttons.second'
+        %li{:class => active == :third ? "active": ""}
+          %a{:href => about_steam_eco_path}
+            = t 'about.reason.reasons.reason2.buttons.third'

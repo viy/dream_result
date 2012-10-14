@@ -68,6 +68,7 @@
           padding-top: 60px;
           text-align: center;
           width: 190px;
+          cursor: pointer;
         }
         .reason1{
             background: image-url("about/box1a.png") no-repeat;
@@ -112,6 +113,9 @@
         padding-left: 20px;
         padding-top: 20px;
       }
+      .third-step-descr{
+        padding-top: 0;
+      }
     }
     .blue{
       color: #0088CC;
@@ -125,10 +129,25 @@
       width: 300px;
       margin-left: 18px;
       .navbar-inner {
-        background: #DCDCDC;
+        background: #ffffff;
       }
-      .active > a:hover {
+      .navbar .nav .active  > a {
+        background: #e8e8e8;
+        color: #1f1f1f;
       }
+      .navbar .nav > li > a {
+        color: #555555;
+        background: #ffffff;
+      }
+      .navbar .nav > li > a:hover {
+        color: #1f1f1f;
+      }
+    }
+    .second-step-btn{
+      width: 420px;
+    }
+    .third-step-btn {
+      width: 158px;
     }
     .concept{
       margin-top: 30px;
@@ -302,6 +321,30 @@
     }
     .botles{
       background: image-url("about/botles.png") no-repeat;
+    }
+    .employee {
+      .description, .picture{
+        vertical-align: top;
+        display: inline-block;
+      }
+      .description{
+        width: 470px;
+        font-size: 15px;
+        .first-descr, .second-descr, .like{
+          margin-top: 50px;
+          text-align: justify;
+        }
+        .like{
+          color: #0088cc;
+          font-size: 15px;
+          font-style: italic;
+        }
+      }
+      .picture{
+        width: 470px;
+        height: 750px;
+        background: image-url("about/employee_box.png");
+      }
     }
   }
 }

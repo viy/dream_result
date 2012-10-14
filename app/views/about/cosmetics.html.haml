@@ -2,11 +2,16 @@
   %img{ :src => image_path("about/about_banner.jpg"), :alt => ""}
 .about-main
   = render :partial => "first_step_heaer"
-  .nav-buttons.btn-group
-    %button.btn
-      1
-    %button.btn
-      2
+  .nav-buttons
+    .navbar
+      .navbar-inner
+        %ul.nav
+          %li
+            %a{:href => "#"}
+              = t 'about.reason.reasons.reason1.buttons.first'
+          %li.active
+            %a{:href => "#"}
+              = t 'about.reason.reasons.reason1.buttons.second'
   .concept
     %img.circle{:src=> image_path("about/arrows.png"), :alt=>""}
     .descr

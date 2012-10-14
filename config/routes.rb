@@ -1,11 +1,13 @@
 Sto::Application.routes.draw do
 
-  get "about/index"
+  match 'about' => "about#index"
   get "about/cosmetics"
   get "about/meguiars"
   get "about/steam_force"
   get "about/steam_safety"
   get "about/steam_eco"
+  get "about/employee"
+
   resources :products
 
   resources :services do
