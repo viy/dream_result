@@ -147,7 +147,10 @@
       width: 420px;
     }
     .third-step-btn {
-      width: 158px;
+      width: 165px;
+    }
+    .fourth-step-btn {
+      width: 650px;
     }
     .concept{
       margin-top: 30px;
@@ -195,6 +198,62 @@
       .eco_invite{
         top: 180px;
         width: 460px;
+      }
+      .coffee_invite{
+        top: 160px;
+        width: 360px;
+      }
+      .guarantee_invite{
+        top: 160px;
+        width: 500px;
+      }
+      .coffee-decr{
+        position: absolute;
+        right: 0;
+        text-align: justify;
+        top: 90px;
+        width: 560px;
+      }
+    }
+    .discount-descr{
+      margin-top: 30px;
+      text-align: justify;
+      font-size: 15px;
+    }
+    .discount-img{
+      margin-top: 30px;
+      position: relative;
+      height: 230px;
+      width: 960px;
+      background: image-url("about/discount.png");
+      .discount-title{
+        color: whitesmoke;
+        font-size: 18px;
+        font-weight: bolder;
+        position: absolute;
+        right: 140px;
+        top: 17px;
+      }
+    }
+    .subscription-img{
+      margin-top: 30px;
+      position: relative;
+      height: 295px;
+      width: 960px;
+      background: image-url("about/subscription.png");
+      .subscription-title{
+        color: whitesmoke;
+        font-size: 18px;
+        font-weight: bolder;
+        position: absolute;
+        right: 153px;
+        top: 13px;
+      }
+      .subscription-descr {
+        font-size: 15px;
+        padding-left: 80px;
+        padding-top: 60px;
+        width: 870px;
       }
     }
     .steps > div{

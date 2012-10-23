@@ -1,0 +1,29 @@
+.header
+  .main-navigation-menu
+    .registration
+      Вход | Регистрация
+    .main-brand-image-div
+      %img{:src=>image_path("Logo_s.png"), :class => "main-brand-image"}
+    .navigation-menu
+      .navbar
+        .navbar-inner
+          .container
+            %ul.nav
+              %li{:class => is_active("services")}
+                %a{:href=>services_path}
+                  = t 'services.title'
+              %li.divider-vertical
+              %li{:class => is_active("products")}
+                %a{:href=>products_path}
+                  =t 'products.title'
+              %li.divider-vertical
+              %li{:class => is_active("about")}
+                %a{:href=>about_path}
+                  =t 'about.name'
+              %li.divider-vertical
+              %li{:class => is_active("galary","contacts")}
+                %a{:href=> contacts_path}
+                  =t 'contacts.name'
+      .shop-nav{:style => "display:none"}
+        <img src="">
+        <span class="items-at-shop">12</span>

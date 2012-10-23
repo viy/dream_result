@@ -1,0 +1,13 @@
+.top-banner
+  %img{ :src => image_path("about/about_banner.jpg"), :alt => ""}
+.about-main
+  = render :partial => "fourth_step_heaer"
+  = render :partial => "fourth_buttons", :locals => {:active => :first}
+  .concept
+    %img.circle{:src=> image_path("about/coffee.png"), :alt=>""}
+    .descr.steam_descr
+      = t 'about.reason.reasons.reason4.coffee.descr.html'
+    .coffee-decr
+      = t 'about.reason.reasons.reason4.coffee.november.html'
+    .invite.coffee_invite
+      = t 'about.reason.reasons.reason4.coffee.like'

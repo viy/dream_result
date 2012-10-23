@@ -25,4 +25,20 @@ class AboutController < ApplicationController
   def employee
 
   end
+
+  def coffee
+
+  end
+
+  def guarantee
+
+  end
+
+  def discount
+
+  end
+
+  def subscription
+
+  end
 end

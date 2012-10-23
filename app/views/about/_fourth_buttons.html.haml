@@ -1,0 +1,16 @@
+.nav-buttons.fourth-step-btn
+  .navbar
+    .navbar-inner
+      %ul.nav
+        %li{:class => active == :first ? "active": ""}
+          %a{:href => about_coffee_path}
+            = t 'about.reason.reasons.reason4.buttons.first'
+        %li{:class => active == :second ? "active": ""}
+          %a{:href => about_guarantee_path}
+            = t 'about.reason.reasons.reason4.buttons.second'
+        %li{:class => active == :third ? "active": ""}
+          %a{:href => about_discount_path}
+            = t 'about.reason.reasons.reason4.buttons.third'
+        %li{:class => active == :fourth ? "active": ""}
+          %a{:href => about_subscription_path}
+            = t 'about.reason.reasons.reason4.buttons.fourth'

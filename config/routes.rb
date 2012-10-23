@@ -7,6 +7,10 @@ Sto::Application.routes.draw do
   get "about/steam_safety"
   get "about/steam_eco"
   get "about/employee"
+  get "about/coffee"
+  get "about/guarantee"
+  get "about/discount"
+  get "about/subscription"
 
   resources :products
 

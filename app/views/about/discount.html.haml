@@ -1,0 +1,10 @@
+.top-banner
+  %img{ :src => image_path("about/about_banner.jpg"), :alt => ""}
+.about-main
+  = render :partial => "fourth_step_heaer"
+  = render :partial => "fourth_buttons", :locals => {:active => :third}
+  .discount-descr
+    = t "about.reason.reasons.reason4.discount.descr.html"
+  .discount-img
+    .discount-title
+      = t "about.reason.reasons.reason4.buttons.third"

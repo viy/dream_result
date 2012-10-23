@@ -1,0 +1,17 @@
+.top-banner
+  %img{ :src => image_path("about/about_banner.jpg"), :alt => ""}
+.about-main
+  = render :partial => "fourth_step_heaer"
+  = render :partial => "fourth_buttons", :locals => {:active => :fourth}
+  .concept
+    %img.circle{:src=> image_path("about/present.png"), :alt=>""}
+    .descr.steam_descr
+      = t 'about.reason.reasons.reason4.subscription.descr.html'
+    .invite.guarantee_invite
+      = t 'about.reason.reasons.reason4.subscription.like'
+
+  .subscription-img
+    .subscription-descr
+      = t 'about.reason.reasons.reason4.subscription.image.html'
+    .subscription-title
+      = t "about.reason.reasons.reason4.subscription.title"
