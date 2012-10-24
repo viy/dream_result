@@ -29,3 +29,5 @@ jQuery ->
     next:
       button: "#slider1_next"
       key: "right"
+  $("#slider1.slider1 img").click ->
+    window.location.href = $(@).data("url")

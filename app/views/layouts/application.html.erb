@@ -1,10 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
   <title>Dream Shine</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-
+  <meta content="text/html; charset=windows-1251" http-equiv="Content-Type">
+  <meta content="IE=9" http-equiv="X-UA-Compatible">
+  <meta name="keywords" content="">
+  <meta name="author" content="Sergii Pervak">
+  <meta name="description" content="">
+  <meta content="Dream shine" property="og:site_name">
   <%= csrf_meta_tags %>
 </head>
 <body id="<%= params[:controller].parameterize %>_controller">

@@ -1,22 +1,23 @@
 .header
   .main-navigation-menu
-    .registration
+    .registration{:style => "display:none"}
       Вход | Регистрация
     .main-brand-image-div
-      %img{:src=>image_path("Logo_s.png"), :class => "main-brand-image"}
+      %a{:href => root_url}
+        %img{:src=>image_path("Logo_s.png"), :class => "main-brand-image"}
     .navigation-menu
       .navbar
         .navbar-inner
           .container
             %ul.nav
-              %li{:class => is_active("services")}
+              %li{:class => is_active("services"), :style => "display:none"}
                 %a{:href=>services_path}
                   = t 'services.title'
-              %li.divider-vertical
-              %li{:class => is_active("products")}
+              %li.divider-vertical{:style => "display:none"}
+              %li{:class => is_active("products"), :style => "display:none"}
                 %a{:href=>products_path}
                   =t 'products.title'
-              %li.divider-vertical
+              %li.divider-vertical{:style => "display:none"}
               %li{:class => is_active("about")}
                 %a{:href=>about_path}
                   =t 'about.name'

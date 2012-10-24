@@ -11,12 +11,12 @@
 .image_carousel
 
   #slider1.slider1
-    %img{ :src=> image_path("galary/slide_avtomoikaabonement.jpg"), :alt=>""}
-    %img{ :src=> image_path("galary/slide_avtomoikagarantiya.jpg")}
-    %img{ :src=> image_path("galary/slide_lutshayaavtomoika.jpg"), :alt=>""}
-    %img{ :src=> image_path("galary/slide_moikaparom.jpg"), :alt=>""}
-    %img{ :src=> image_path("galary/slide_meguiars.jpg") }
-    %img{ :src=> image_path("galary/slide_lutshayaavtomoika.jpg"), :alt=>""}
+    %img{ :src=> image_path("galary/slide_avtomoikaabonement.jpg"), :alt=>"", :data=>{:url => about_subscription_url}}
+    %img{ :src=> image_path("galary/slide_avtomoikagarantiya.jpg"), :data=>{:url => about_guarantee_url}}
+    %img{ :src=> image_path("galary/slide_lutshayaavtomoika.jpg"), :alt=>"", :data=>{:url => about_coffee_url}}
+    %img{ :src=> image_path("galary/slide_moikaparom.jpg"), :alt=>"", :data=>{:url => about_steam_eco_url}}
+    %img{ :src=> image_path("galary/slide_meguiars.jpg"), :data=>{:url => about_url} }
+    %img{ :src=> image_path("galary/slide_lutshayaavtomoika.jpg"), :alt=>"", :data=>{:url => about_coffee_url}}
   .clearfix
   .gallery_controls
     %a#slider1_prev.prev{:href=>"#"}
