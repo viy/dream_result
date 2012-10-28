@@ -10,10 +10,16 @@
       position: relative;
       margin-left: 110px;
       width: 220px;
+      div {
+        margin-top: 10px;
+      }
       .service-name {
         text-align: left;
         color: #0088CC;
         font-size: 14px;
+        margin-left: 90px;
+        font-weight: bold;
+        margin-top: 0px;
       }
       .name, .content {
         display: inline-block;
@@ -36,14 +42,14 @@
         margin-top: 5px;
         button {
           position: absolute;
-          right: 0;
+          right: 35px;
         }
       }
     }
   }
   .map-viewer {
     position: relative;
-    padding-left: 30px;
+    padding-left: 10px;
     .media-content{
       height: 575px;
       position: absolute;

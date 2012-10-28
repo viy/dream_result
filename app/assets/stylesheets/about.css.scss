@@ -15,6 +15,7 @@
       padding: 43px 20px;
       text-align: justify;
       width: 180px;
+      margin-top: 29px;
     }
     .main_info{
       position: relative;
@@ -50,11 +51,11 @@
     .about-reason{
       .title{
         color:red;
-        font-size: 20px;
-        font-style: italic;
-        margin-bottom: 20px;
-        margin-top: 5px;
+        font-size: 24px;
+        margin-top: 20px;
         padding-bottom: 0;
+        margin-bottom: 15px;
+        margin-left: 30px;
       }
       .reason-boxes{
         .reason{
@@ -75,6 +76,7 @@
         }
         .reason2{
           background: image-url("about/box2a.png") no-repeat;
+          margin-right: 8px;
         }
         .reason3{
           background: image-url("about/box3a.png") no-repeat;
@@ -100,18 +102,20 @@
       width: 960px;
       background: image-url("about/box0.png") no-repeat;
       height: 165px;
+      margin-top: -2px;
       .title {
         color: #0088CC;
-        font-size: 25px;
-        font-style: italic;
-        padding-left: 20px;
+        font-size: 24px;
+        padding-left: 30px;
         padding-top: 20px;
         line-height: 23px;
       }
       .descr{
         font-size: 17px;
-        padding-left: 20px;
-        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        text-align: justify;
       }
       .third-step-descr{
         padding-top: 0;
@@ -126,7 +130,7 @@
 
     .nav-buttons {
       margin-top: -20px;
-      width: 300px;
+      width: 296px;
       margin-left: 18px;
       .navbar-inner {
         background: #ffffff;
@@ -144,13 +148,13 @@
       }
     }
     .second-step-btn{
-      width: 420px;
+      width: 418px;
     }
     .third-step-btn {
       width: 165px;
     }
     .fourth-step-btn {
-      width: 650px;
+      width: 618px;
     }
     .concept{
       margin-top: 30px;
@@ -158,6 +162,10 @@
       .circle {
         display: inline-block;
         vertical-align: top;
+        margin-left:  0;
+      }
+      .arrows-circle{
+        margin-left: 30px;
       }
       .descr {
         display: inline-block;
@@ -184,7 +192,7 @@
       }
       .steam_descr{
         margin-left: 0;
-        width: 740px;
+        width: 725px;
         text-align: justify;
       }
       .steam_invite{
@@ -216,9 +224,11 @@
       }
     }
     .discount-descr{
+      font-size: 15px;
+      margin-left: 30px;
       margin-top: 30px;
       text-align: justify;
-      font-size: 15px;
+      width: 900px;
     }
     .discount-img{
       margin-top: 30px;
@@ -251,32 +261,41 @@
       }
       .subscription-descr {
         font-size: 15px;
-        padding-left: 80px;
+        padding-left: 50px;
         padding-top: 60px;
-        width: 870px;
+        width: 880px;
       }
     }
     .steps > div{
       margin-top: 30px;
       font-size: 15px;
+      margin-left: 30px;
+      margin-right: 30px;
+      width: 900px;
+      text-align:justify;
     }
-    .second-step-detailed{
-      position: relative;
-      background: image-url("about/miles-box.png") no-repeat;
-      width: 960px;
-      height: 510px;
-      margin-top: 30px;
-      .first-mile,.second-mile {
-        position: absolute;
-        width: 370px;
-        top: 30px;
-        text-align: justify;
-      }
-      .first-mile{
-        left: 60px;
-      }
-      .second-mile {
-        right: 50px;
+    .steps {
+      .second-step-detailed{
+        position: relative;
+        background: image-url("about/miles-box.png") no-repeat;
+        width: 960px;
+        height: 510px;
+        margin-top: 30px;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+        .first-mile,.second-mile {
+          position: absolute;
+          width: 380px;
+          top: 30px;
+          text-align: justify;
+        }
+        .first-mile{
+          left: 50px;
+        }
+        .second-mile {
+          right: 60px;
+        }
       }
     }
     .mag-info {
@@ -286,7 +305,7 @@
         margin-left: 30px;
         vertical-align: top;
         display: inline-block;
-        width: 750px;
+        width: 690px;
         font-size: 17px;
         margin-top: 30px;
         text-align: justify;
@@ -297,6 +316,7 @@
         height: 175px;
         vertical-align: top;
         display: inline-block;
+        margin-left: 30px;
       }
       .like{
         position: absolute;
@@ -322,12 +342,12 @@
         width: 180px;
       }
       .descr{
+        left: 500px;
+        right: 60px;
+        top: 130px;
+        width: 375px;
         font-size: 16px;
         position: absolute;
-        right: 70px;
-        text-align: justify;
-        top: 100px;
-        width: 400px;
       }
     }
     .history{
@@ -337,12 +357,14 @@
       .citate, .pebel-beach{
         display: inline-block;
         vertical-align: top;
-        width: 460px;
+        width: 430px;
       }
       .citate{
-        margin-right: 10px;
+        margin-left: 10px;
+        margin-right: 30px;
+        width: 440px;
         .name{
-          margin-bottom: 20px;
+          margin-bottom: 30px;
           font-size: 15px;
         }
         .value {
@@ -354,10 +376,12 @@
       }
       .pebel-beach{
         .icon > img{
-          width: 460px;
+          width: 400px;
+          height: 85px;
         }
         .descr{
           font-size: 14px;
+          margin-top: 30px;
         }
       }
     }
@@ -372,13 +396,14 @@
         font-size: 18px;
         font-weight: bolder;
         position: absolute;
-        right: 155px;
+        right: 140px;
         text-align: center;
         top: 15px;
-        width: 300px;
+        width: 315px;
       }
     }
     .botles{
+      height: 455px;
       background: image-url("about/botles.png") no-repeat;
     }
     .employee {

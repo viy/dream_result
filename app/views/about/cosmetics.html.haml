@@ -7,13 +7,13 @@
       .navbar-inner
         %ul.nav
           %li
-            %a{:href => "#"}
+            %a{:href => about_meguiars_path}
               = t 'about.reason.reasons.reason1.buttons.first'
           %li.active
-            %a{:href => "#"}
+            %a{:href => about_cosmetics_path}
               = t 'about.reason.reasons.reason1.buttons.second'
   .concept
-    %img.circle{:src=> image_path("about/arrows.png"), :alt=>""}
+    %img.arrows-circle{:src=> image_path("about/arrows.png"), :alt=>""}
     .descr
       = t 'about.reason.reasons.reason1.concept.descr.html'
     .remark
