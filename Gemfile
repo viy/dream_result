@@ -14,8 +14,10 @@ gem 'jquery-ui-rails'
 gem 'bootstrap-sass', '~> 2.0.3'
 gem 'haml-rails'
 gem 'kaminari'
-gem 'paperclip'
+gem 'carrierwave'
+gem 'rmagick'
 gem 'globalize3'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -41,10 +43,10 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+ gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+ gem 'capistrano'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'

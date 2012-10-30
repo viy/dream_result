@@ -5,9 +5,8 @@ class CreateServices < ActiveRecord::Migration
       t.integer :basic_program
       t.integer :express_program
       t.text :description
+      t.string :image
       t.timestamps
     end
-
-    add_attachment :services, :image
   end
 end
