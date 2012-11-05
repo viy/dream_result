@@ -17,6 +17,30 @@ ssh_options[:forward_agent] = true
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
 after "deploy", "deploy:migrate"
+set :shared_assets, %w{public/uploads}
+
+namespace :assets  do
+  namespace :symlinks do
+    desc "Setup application symlinks for shared assets"
+    task :setup, :roles => [:app, :web] do
+      shared_assets.each { |link| run "mkdir -p #{shared_path}/#{link}" }
+    end
+
+    desc "Link assets for current deploy to the shared location"
+    task :update, :roles => [:app, :web] do
+      shared_assets.each { |link| run "ln -nfs #{shared_path}/#{link} #{release_path}/#{link}" }
+    end
+  end
+end
+
+before "deploy:setup" do
+  assets.symlinks.setup
+end
+
+before "deploy:symlink" do
+  assets.symlinks.update
+end
+
 namespace :deploy do
   %w[start stop restart].each do |command|
     desc "#{command} unicorn server"
