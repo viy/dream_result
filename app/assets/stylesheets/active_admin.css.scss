@@ -1,9 +1,19 @@
 // Active Admin CSS Styles
 @import "active_admin/mixins";
 @import "active_admin/base";
+@import "jquery-ui-1.8.23.custom.css";
 
 // To customize the Active Admin interfaces, add your
 // styles here:
 .service-image-index {
   width: 20px;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+  background: #f5f5f5;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a {
+  color: gray;
+  text-decoration: none;
 }

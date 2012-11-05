@@ -17,7 +17,7 @@ gem 'kaminari'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'globalize3'
-
+gem 'globalize3-inputs-bootstrap', :git => "https://github.com/viy/globalize3-inputs-bootstrap.git"
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

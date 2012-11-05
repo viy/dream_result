@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/viy/globalize3-inputs-bootstrap.git
+  revision: f023972db030a4f8908464b3b7bd1e815f5f26b4
+  specs:
+    globalize3-inputs-bootstrap (0.1.1)
+      activeadmin
+      globalize3
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -207,6 +215,7 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 3.2.1)
   globalize3
+  globalize3-inputs-bootstrap!
   haml-rails
   jquery-rails
   jquery-ui-rails
