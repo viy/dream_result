@@ -13,10 +13,11 @@ ActiveAdmin.register Service do
       end
     end
     f.inputs "Main" do
+      I18n.locale = :ru
       f.input :basic_program
       f.input :express_program
+      f.input :service_features, :as => :select, :collection =>Hash[ServiceFeature.all.map{|b| [b.name, b.id]}], :input_html => { :multiple => true }
       f.input :image
-
     end
 
     f.buttons

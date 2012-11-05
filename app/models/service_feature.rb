@@ -3,4 +3,5 @@ class ServiceFeature < ActiveRecord::Base
   translates :name, :description
   accepts_nested_attributes_for :translations
   mount_uploader :image, ServiceImageUploader
+  has_and_belongs_to_many :services
 end
