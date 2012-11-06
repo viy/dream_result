@@ -17,6 +17,7 @@ ActiveAdmin.register Service do
       f.input :basic_program
       f.input :express_program
       f.input :service_features, :as => :select, :collection =>Hash[ServiceFeature.all.map{|b| [b.name, b.id]}], :input_html => { :multiple => true }
+      f.input :tag_list, :input_html => {:data => {:tags => Service.tag_counts.all.map(&:name).uniq}}
       f.input :image
     end
 

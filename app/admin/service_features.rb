@@ -11,7 +11,9 @@ ActiveAdmin.register ServiceFeature do
         lf.input :locale, :as => :hidden
       end
     end
-    f.inputs :image
+    f.inputs "Main" do
+      f.input :image
+    end
 
     f.buttons
   end

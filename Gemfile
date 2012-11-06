@@ -17,6 +17,7 @@ gem 'kaminari'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'globalize3'
+gem 'acts-as-taggable-on', '~> 2.3.1'
 gem 'globalize3-inputs-bootstrap', :git => "https://github.com/viy/globalize3-inputs-bootstrap.git"
 # Gems used only for assets and not required
 # in production environments by default.
@@ -24,6 +25,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'bourbon'
+  gem "select2-rails"
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
 
