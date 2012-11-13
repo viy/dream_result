@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.3'
+gem 'rails', '3.2.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -15,6 +15,7 @@ gem 'bootstrap-sass', '~> 2.0.3'
 gem 'haml-rails'
 gem 'kaminari'
 gem 'carrierwave'
+gem 'bootstrap_kaminari'
 gem 'rmagick'
 gem 'globalize3'
 gem 'acts-as-taggable-on', '~> 2.3.1'

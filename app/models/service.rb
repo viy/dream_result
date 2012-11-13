@@ -5,4 +5,15 @@ class Service < ActiveRecord::Base
   accepts_nested_attributes_for :translations
   has_and_belongs_to_many :service_features
   acts_as_taggable
+
+  def self.filtered_by_type(type)
+    case type
+      when "basic"
+        where(basic_program:nil)
+      when "express"
+        where(express_program:nil)
+      else
+        where(true)
+    end
+  end
 end

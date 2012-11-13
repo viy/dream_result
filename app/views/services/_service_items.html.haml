@@ -1,0 +1,26 @@
+- @services.each do |service|
+  .item
+    .pic
+      %img{:src=> service.image, :alt => "Service"}
+    .item-description
+      .name
+        = service.name
+      .options
+        .basic
+          .name
+            = "#{t 'programs.basic_name'} :"
+          %span.value
+            = t 'included'
+        .express.buy
+          .name
+            = "#{t 'programs.express_name'} :"
+          %span.value
+            = "#{service.express_program} #{t 'curency'}"
+    .buttons
+      .buy-button
+        .btn.btn-inverse
+          %i.icon-shopping-cart.icon-white
+          = t 'programs.order'
+      .detail
+        %a{:href=>"#"}
+          =t 'detail'

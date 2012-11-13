@@ -19,6 +19,7 @@ Sto::Application.routes.draw do
   resources :services do
     collection do
       get :media
+      get :get_services
     end
   end
   match 'contacts' => 'galary#contacts'

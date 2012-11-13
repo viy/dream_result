@@ -1,6 +1,10 @@
 class ServicesController < ApplicationController
   def index
-    @services = Service.page(1).per(8)
+    @services = Service.filtered_by_type(params[:type]).page(params[:page]).per(2)
+    respond_to do |format|
+      format.html
+      format.js {render :partial => "index"}
+    end
   end
 
   def show

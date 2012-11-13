@@ -1,14 +1,27 @@
 // Place all the styles related to the services controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "jquery-ui-1.8.23.custom.css";
+@import "jquery-ui-1.8.23.custom.css.scss";
 
 #services_controller{
   .services-main {
     margin-top: 10px;
     margin-left: 120px;
   }
-
+  .services_accordion{
+    @include jquery-ui;
+    .ui-icon {
+      vertical-align: top;
+      display: inline-block;
+    }
+    .ui-accordion-header{
+      padding: 5px;
+      a {
+        display: inline-block;
+        width: 170px;
+      }
+    }
+  }
   .nav-menu .cart {
     width: 220px;
     height: 70px;
@@ -190,6 +203,7 @@
     padding-left: 5px;
   }
   .item {
+    background: #ffffff;
     border: 1px solid graytext;
     height: 205px;
     width: 330px;
@@ -210,6 +224,7 @@
       display: inline-block;
       vertical-align: top;
       margin-top: 10px;
+      width: 175px;
 
       div.name {
         font-size: 17px;
@@ -218,12 +233,15 @@
       }
       .options div{
         font-style: italic;
+        height: 20px;
+        overflow: hidden;
+        vertical-align: text-top;
         div.name {
           font-size: 15px;
           font-weight: bold;
           font-style: normal;
           height: 16px;
-          width: 75px;
+          width: 80px;
           display: inline-block;
         }
       }
@@ -239,7 +257,7 @@
       div {
         display: inline-block;
         vertical-align: top;
-        margin: 17px 10px 10px;
+        margin: 9px 10px 10px;
       }
       .detail{
         float: right;
