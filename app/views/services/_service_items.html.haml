@@ -6,16 +6,16 @@
       .name
         = service.name
       .options
-        .basic
+        .basic{:class => service.basic_program.nil? ? "" : "buy"}
           .name
             = "#{t 'programs.basic_name'} :"
           %span.value
-            = t 'included'
-        .express.buy
+            = service.basic_program.nil? ? t('included') : "#{service.basic_program} #{t 'curency'}"
+        .express{:class => service.express_program.nil? ? "" : "buy"}
           .name
             = "#{t 'programs.express_name'} :"
           %span.value
-            = "#{service.express_program} #{t 'curency'}"
+            = service.express_program.nil? ? t('included') : "#{service.express_program} #{t 'curency'}"
     .buttons
       .buy-button
         .btn.btn-inverse
