@@ -1,3 +1,3 @@
 $("#<%= params[:type]-%>").html("<%= escape_javascript(render(:partial => 'service_items')) -%>");
-$(".paginator").html("<%= escape_javascript( paginate @services, :remote => true , :theme => 'bootstrap', :params => {:type => params[:type]} )-%>");
+$(".paginator").html("<%= escape_javascript( paginate @services, :remote => true, :window =>2 , :theme => 'bootstrap', :params => {:type => params[:type], :tag => params[:tag]} )-%>");
 $(".service-items").tab();

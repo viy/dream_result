@@ -76,7 +76,7 @@
   </div>
   <div class="tabbable service-items"> <!-- Only required for left/right tabs -->
     <div class="paginator">
-      <%= paginate @services, :remote => true , :theme => 'bootstrap', :params => {:type =>"allservices"} %>
+      <%= paginate @services, :remote => true , :theme => 'bootstrap', :window =>2, :params => {:type =>"allservices", :tag => params[:tag]} %>
     </div>
     <ul class="nav nav-tabs">
       <li class="active"><a href="#allservices" data-toggle="tab"><%= t 'services.all_short' %></a></li>
@@ -84,13 +84,13 @@
       <li><a href="#express" data-toggle="tab" data-url="<%= -%>"><%= t 'programs.express' %></a></li>
     </ul>
     <div class="tab-content">
-      <div class="tab-pane active" id="allservices" data-url="<%= services_url :type => "allservices" -%>" >
+      <div class="tab-pane active" id="allservices" data-url="<%= services_url :type => "allservices", :tag => params[:tag] -%>" >
         <%= render :partial => 'service_items' %>
       </div>
-      <div class="tab-pane" id="basic" data-url="<%= services_url :type => "basic"-%>">
+      <div class="tab-pane" id="basic" data-url="<%= services_url :type => "basic", :tag => params[:tag]-%>">
         <p></p>
       </div>
-      <div class="tab-pane" id="express" data-url="<%= services_url :type => "express" -%>">
+      <div class="tab-pane" id="express" data-url="<%= services_url :type => "express", :tag => params[:tag] -%>">
         <p></p>
       </div>
     </div>

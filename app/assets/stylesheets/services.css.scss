@@ -195,6 +195,12 @@
   .service-items {
     margin-left: 240px;
     width: 720px;
+    position: relative;
+    .paginator {
+      position: absolute;
+      right: 0;
+      top: -18px;
+    }
     a {
       color: red;
     }

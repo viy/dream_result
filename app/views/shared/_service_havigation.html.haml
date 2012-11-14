@@ -1,52 +1,58 @@
 %h5 
-  %a{:href=>"#"}
+  %a{:href=>services_url(:tag => t( "services.exterior"))}
     =t 'services.exterior' 
 %div
   %ol
     %li
-      %a=t "materials.metal"
+      %a{:href => services_url(:tag => t( "materials.metal"))}
+        =t "materials.metal"
     %li
-      %a=t "materials.plastic"
+      %a{:href => services_url(:tag => t( "materials.plastic"))}
+        =t "materials.plastic"
     %li
-      %a=t "materials.glass"
+      %a{:href => services_url(:tag => t( "materials.glass"))}
+        =t "materials.glass"
     %li
-      %a=t "parts.disks"
+      %a{:href => services_url(:tag => t( "parts.disks"))}
+        =t "parts.disks"
     %li
-      %a=t "parts.engine_cave"
-    %li
-      %a=t "parts.headlamp"
+      %a{:href => services_url(:tag => t( "parts.engine_cave"))}
+        =t "parts.engine_cave"
+    %li{:href => services_url(:tag => t( "parts.headlamp"))}
+      %a
+        =t "parts.headlamp"
 
 %h5
-  %a{ :href=>"#"}
+  %a{:href => services_url(:tag => t( "services.varnish"))}
     = t 'services.varnish'
 %div
   %ol
     %li
-      %a
+      %a{:href => services_url(:tag => t( "services.varnish_types.cleaning"))}
         =t "services.varnish_types.cleaning"
     %li
-      %a
+      %a{:href => services_url(:tag => t( "services.varnish_types.prepearing"))}
         =t "services.varnish_types.prepearing"
     %li
-      %a
+      %a{:href => services_url(:tag => t( "services.varnish_types.polishing"))}
         =t "services.varnish_types.polishing"
     %li
-      %a
+      %a{:href => services_url(:tag => t( "services.varnish_types.protection"))}
         =t "services.varnish_types.protection"
 %h5
-  %a{:href=>"#"}
+  %a{:href=> services_url(:tag => t( "services.interior"))}
     = t 'services.interior'
 %div
   %ol
     %li
-      %a
+      %a{:href=> services_url(:tag => t( "materials.plastic"))}
         =t "materials.plastic"
     %li
-      %a
+      %a{href: services_url(:tag => t( "materials.glass"))}
         =t "materials.glass"
     %li
-      %a
+      %a{:href=> services_url(:tag => t( "materials.textile_only"))}
         =t "materials.textile_only"
     %li
-      %a
+      %a{:href=> services_url(:tag => t( "materials.leather"))}
         =t "materials.leather"
