@@ -10,6 +10,8 @@ class ServicesController < ApplicationController
   end
 
   def show
+    I18n.locale = 'ru'
+    @service = Service.find(params[:id])
   end
 
   def media

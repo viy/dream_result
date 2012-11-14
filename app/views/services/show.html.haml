@@ -4,7 +4,7 @@
   = render( :partial => 'nav_menu')
   .service-content
     .service-name
-      = t 'services.thorough.defect_removal.name'
+      = @service.name
     .service
       .background-div
         .top-div
@@ -12,21 +12,19 @@
         .bottom-div
       .main-description
         .service-image
-          %img{:src => image_path("programs/udaleniegologramm_l.jpg"), :alt => ""}
+          %img{:src => image_path(@service.image), :alt => @service.name}
         .service
           .description
             .title
               = t 'services.thorough.description'
             .text
-              = t 'services.thorough.defect_removal.text'
+              = @service.description
           .features
             .title
               = t 'services.thorough.features'
             .images
-              %img{:src => image_path("features/bezopasnodlyalaka.png"), :alt => ""}
-              %img{:src => image_path("features/dapolisher.png"), :alt => ""}
-              %img{:src => image_path("features/idealnoesostoyanie.png"), :alt => ""}
-              %img{:src => image_path("features/step2.png"), :alt => ""}
+              - @service.service_features.each do |feature|
+                %img{:src => image_path(feature.image), :alt => feature.name}
           .photo
             %button.btn
               = t 'services.thorough.photo'
@@ -37,12 +35,12 @@
               .name
                 = t 'programs.in_basic'
               .price
-                = "310 #{ t 'curency'}"
+                = @service.basic_program.nil? ? t('included') : "#{@service.basic_program} #{t 'curency'}"
             .express
               .name
                 = t 'programs.in_express'
               .price
-                = "420 #{ t 'curency'}"
+                = @service.express_program.nil? ? t('included') : "#{@service.express_program} #{t 'curency'}"
           .order
             %button.btn.btn-danger
               = t 'programs.order'
