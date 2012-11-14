@@ -7,7 +7,7 @@ jQuery(function() {
     }
     if ($("#service_tag_list").length){
         $("#service_tag_list").select2({tags:$("#service_tag_list").data("tags"),
-                                        tokenSeparators: [",", " "]})
+                                        tokenSeparators: [","]})
     }
 });
 
