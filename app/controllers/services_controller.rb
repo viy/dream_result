@@ -1,5 +1,6 @@
 class ServicesController < ApplicationController
   def index
+    I18n.locale = 'ru'
     @services = Service.filtered_by_type(params[:type]).page(params[:page]).per(8)
     @services = @services.tagged_with( params[:tag] ) if params[:tag]
     respond_to do |format|
