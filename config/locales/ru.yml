@@ -3,6 +3,10 @@ ru:
   included: "Включено"
   detail: "Подробнее"
   back: "Назад"
+  views:
+    pagination:
+      bootstrap:
+        truncate: "..."
   cart:
     name: "Корзина"
     empty: "Ваша корзина пуста"
