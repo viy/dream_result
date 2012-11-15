@@ -12,6 +12,7 @@ ActiveAdmin.register Product do
     f.inputs "Main" do
       I18n.locale = :ru
       f.input :image
+      f.input :tag_list, :input_html => {:data => {:tags => Product.tag_counts.all.map(&:name).uniq}}
     end
 
     f.buttons

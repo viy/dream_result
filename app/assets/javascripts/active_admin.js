@@ -9,5 +9,9 @@ jQuery(function() {
         $("#service_tag_list").select2({tags:$("#service_tag_list").data("tags"),
                                         tokenSeparators: [","]})
     }
+    if ($("#product_tag_list").length){
+        $("#product_tag_list").select2({tags:$("#product_tag_list").data("tags"),
+            tokenSeparators: [","]})
+    }
 });
 
