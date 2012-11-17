@@ -6,4 +6,13 @@ module ApplicationHelper
       end
     end
   end
+
+  def get_accardion_url(options = {})
+    if params[:controller] == "products"
+      products_url options
+    else
+      services_url options
+    end
+  end
+
 end

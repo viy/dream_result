@@ -3,25 +3,27 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "jquery-ui-1.8.23.custom.css.scss";
 
+.services_accordion{
+  @include jquery-ui;
+  .ui-icon {
+    vertical-align: top;
+    display: inline-block;
+  }
+  .ui-accordion-header{
+    padding: 5px;
+    a {
+      display: inline-block;
+      width: 170px;
+    }
+  }
+}
+
 #services_controller{
   .services-main {
     margin-top: 10px;
     margin-left: 120px;
   }
-  .services_accordion{
-    @include jquery-ui;
-    .ui-icon {
-      vertical-align: top;
-      display: inline-block;
-    }
-    .ui-accordion-header{
-      padding: 5px;
-      a {
-        display: inline-block;
-        width: 170px;
-      }
-    }
-  }
+
   .nav-menu .cart {
     width: 220px;
     height: 70px;

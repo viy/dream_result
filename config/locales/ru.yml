@@ -40,6 +40,7 @@ ru:
     order: "ЗАКАЗАТЬ"
     additional: "Дополнительные"
   products:
+    all: "Все продукты"
     title: "Maguiar`s"
     name: "Продукты"
     used_products: "Какие продукты используются"
