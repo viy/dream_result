@@ -2,7 +2,7 @@
   %img{ :src => image_path("product_banner.jpg"), :alt => ""}
 .products
   .product-nav
-    .services_accordion
+    .services_accordion{data:{:active => params[:ac_active]||1}}
       %h5#all
         %a{:href=> products_url }
           = t 'products.all'

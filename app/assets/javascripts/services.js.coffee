@@ -17,7 +17,7 @@ jQuery ->
       event: "mouseover"
       alwaysOpen: false
       navigation: true
-    $('.services_accordion').accordion('activate', 1)
+    $('.services_accordion').accordion('activate', $('.services_accordion').data("active"))
 
   $('#all').unbind('mouseover')
   if $('.media-carousel .carousel-container').length

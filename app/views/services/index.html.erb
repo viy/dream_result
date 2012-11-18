@@ -4,12 +4,14 @@
 <div class="services-main">
   <%= render :partial => 'nav_menu' %>
   <div class="services-items">
-    <div class="service-header">
-      <div class="messagge1"><%= t 'services.message1' %></div>
-      <div class="messagge-bold"><%= t 'services.message-bold' %></div>
-      <div class="messagge2"><%= t 'services.message2.html' %></div>
-      <div class="messagge-icon"><img src="<%= image_path("info_icon.png") %>" alt="info"></div>
-    </div>
+    <% if params[:banner]%>
+        <div class="service-header">
+          <div class="messagge1"><%= t 'services.message1' %></div>
+          <div class="messagge-bold"><%= t 'services.message-bold' %></div>
+          <div class="messagge2"><%= t 'services.message2.html' %></div>
+          <div class="messagge-icon"><img src="<%= image_path("info_icon.png") %>" alt="info"></div>
+        </div>
+    <% end%>
     <div class="programms">
       <div class="basic">
         <div class="shild">

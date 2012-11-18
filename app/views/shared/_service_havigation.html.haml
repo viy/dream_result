@@ -23,36 +23,36 @@
         =t "parts.headlamp"
 
 %h5
-  %a{:href => get_accardion_url(:tag => t( "services.varnish"))}
+  %a{:href => get_accardion_url(:ac_active => 2,:tag => t( "services.varnish"))}
     = t 'services.varnish'
 %div
   %ol
     %li
-      %a{:href => get_accardion_url(:tag => [t( "services.varnish_types.cleaning"),t( "services.varnish")])}
+      %a{:href => get_accardion_url(:ac_active => 2,:tag => [t( "services.varnish_types.cleaning"),t( "services.varnish")])}
         =t "services.varnish_types.cleaning"
     %li
-      %a{:href => get_accardion_url(:tag => [t( "services.varnish_types.prepearing"),t( "services.varnish")])}
+      %a{:href => get_accardion_url(:ac_active => 2,:tag => [t( "services.varnish_types.prepearing"),t( "services.varnish")])}
         =t "services.varnish_types.prepearing"
     %li
-      %a{:href => get_accardion_url(:tag => [t( "services.varnish_types.polishing"),t( "services.varnish")])}
+      %a{:href => get_accardion_url(:ac_active => 2,:tag => [t( "services.varnish_types.polishing"),t( "services.varnish")])}
         =t "services.varnish_types.polishing"
     %li
-      %a{:href => get_accardion_url(:tag => [t( "services.varnish_types.protection"),t( "services.varnish")])}
+      %a{:href => get_accardion_url(:ac_active => 2,:tag => [t( "services.varnish_types.protection"),t( "services.varnish")])}
         =t "services.varnish_types.protection"
 %h5
-  %a{:href=> get_accardion_url(:tag => t( "services.interior"))}
+  %a{:href=> get_accardion_url(:ac_active => 3, :tag => t( "services.interior"))}
     = t 'services.interior'
 %div
   %ol
     %li
-      %a{:href=> get_accardion_url(:tag => [t( "materials.plastic"),t( "services.interior")])}
+      %a{:href=> get_accardion_url(:ac_active => 3,:tag => [t( "materials.plastic"),t( "services.interior")])}
         =t "materials.plastic"
     %li
-      %a{href: get_accardion_url(:tag => [t( "materials.glass"),t( "services.interior")])}
+      %a{href: get_accardion_url(:ac_active => 3,:tag => [t( "materials.glass"),t( "services.interior")])}
         =t "materials.glass"
     %li
-      %a{:href=> get_accardion_url(:tag => [t( "materials.textile_only"),t( "services.interior")])}
+      %a{:href=> get_accardion_url(:ac_active => 3,:tag => [t( "materials.textile_only"),t( "services.interior")])}
         =t "materials.textile_only"
     %li
-      %a{:href=> get_accardion_url(:tag => [t( "materials.leather"),t( "services.interior")])}
+      %a{:href=> get_accardion_url(:ac_active => 3,:tag => [t( "materials.leather"),t( "services.interior")])}
         =t "materials.leather"

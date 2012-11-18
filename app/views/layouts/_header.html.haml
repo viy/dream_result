@@ -10,14 +10,14 @@
         .navbar-inner
           .container
             %ul.nav
-              %li{:class => is_active("services"), :style => "display:none"}
-                %a{:href=>services_path}
+              %li{:class => is_active("services")}
+                %a{:href=>services_path(:banner => true)}
                   = t 'services.title'
-              %li.divider-vertical{:style => "display:none"}
-              %li{:class => is_active("products"), :style => "display:none"}
+              %li.divider-vertical
+              %li{:class => is_active("products")}
                 %a{:href=>products_path}
                   =t 'products.title'
-              %li.divider-vertical{:style => "display:none"}
+              %li.divider-vertical
               %li{:class => is_active("about")}
                 %a{:href=>about_path}
                   =t 'about.name'
