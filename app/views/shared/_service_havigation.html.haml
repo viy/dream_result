@@ -45,14 +45,14 @@
 %div
   %ol
     %li
-      %a{:href=> get_accardion_url(:tag => t( "materials.plastic"))}
+      %a{:href=> get_accardion_url(:tag => [t( "materials.plastic"),t( "services.interior")])}
         =t "materials.plastic"
     %li
-      %a{href: get_accardion_url(:tag => [t( "materials.glass"),t( "materials.plastic")])}
+      %a{href: get_accardion_url(:tag => [t( "materials.glass"),t( "services.interior")])}
         =t "materials.glass"
     %li
-      %a{:href=> get_accardion_url(:tag => [t( "materials.textile_only"),t( "materials.plastic")])}
+      %a{:href=> get_accardion_url(:tag => [t( "materials.textile_only"),t( "services.interior")])}
         =t "materials.textile_only"
     %li
-      %a{:href=> get_accardion_url(:tag => [t( "materials.leather"),t( "materials.plastic")])}
+      %a{:href=> get_accardion_url(:tag => [t( "materials.leather"),t( "services.interior")])}
         =t "materials.leather"
