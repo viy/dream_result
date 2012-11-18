@@ -49,6 +49,6 @@
       = t 'products.used_products'
     .line
     .products
-      %img{:src => image_path("meguaers/meguiars_scratchx_s.jpg"), :alt =>""}
-      %img{:src => image_path("meguaers/meguiars_swirlxl_s.jpg"), :alt =>""}
-      %img{:src => image_path("meguaers/meguiars_ultimatecompound_s.jpg"), :alt =>""}
+      - @service.products.each do |product|
+        %a{:href => product_path(product)}
+          %img{src: product.image, alt: product.name}

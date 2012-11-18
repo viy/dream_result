@@ -43,6 +43,7 @@ ru:
     all: "Все продукты"
     title: "Maguiar`s"
     name: "Продукты"
+    used_services: "Где Применяется"
     used_products: "Какие продукты используются"
     products_we_use: "Продукты, которые мы используем"
     autocosmetic: "Meguier's - первокласная американская автокосметика"

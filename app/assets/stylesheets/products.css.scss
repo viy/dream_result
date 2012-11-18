@@ -12,6 +12,64 @@
     .product-content{
       margin-top: 10px;
       margin-left: 30px;
+      .product-name{
+        color: red;
+        font-size: 25px;
+        margin-left: 15px;
+        font-style: italic;
+      }
+      .product-description{
+        background: image-url("products_show.png") no-repeat;
+        height: 345px;
+        width: 745px;
+        margin-top: 10px;
+        .description{
+          .title{
+            padding: 25px 0 0 305px;
+            text-align: left;
+            color: #0088CC;
+            font-size: 20px;
+          }
+          .content{
+            margin-left: 40px;
+            margin-top: 10px;
+            .image, .text-content{
+              vertical-align: top;
+              display: inline-block;
+              img {
+                width: 245px;
+              }
+            }
+            .image{}
+            .text-content{
+              height: 245px;
+              margin-left: 20px;
+              text-align: justify;
+              width: 395px;
+            }
+          }
+        }
+      }
+      .related-services{
+        margin-top: 30px;
+        margin-left: 15px;
+        .line {
+          height: 1px;
+          width: auto;
+          background-color: #BBBBBB;
+          margin: 5px 0;
+        }
+        .title{
+          text-align: left;
+          color: #0088CC;
+          font-size: 20px;
+        }
+        .services{
+          img {
+            margin: 5px;
+          }
+        }
+      }
       .header-label{
         position: relative;
         width: 744px;

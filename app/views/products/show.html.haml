@@ -1,0 +1,30 @@
+.top-banner
+  %img{ :src => image_path("product_banner.jpg"), :alt => ""}
+.products
+  .product-nav
+    .services_accordion
+      %h5#all
+        %a{:href=> products_url }
+          = t 'products.all'
+      %div
+      = render :partial => "shared/service_havigation"
+  .product-content
+    .product-name
+      = @product.name
+    .product-description
+      .description
+        .title
+          = t('services.thorough.description')
+        .content
+          .image
+            %img{:src => @product.image, :alt => @product.name}
+          .text-content
+            = @product.description
+    .related-services
+      .title
+        = t 'products.used_services'
+      .line
+      .services
+        - @product.services.each do |service|
+          %a{:href => service_path(service)}
+            %img{src: service.image, alt: service.name}

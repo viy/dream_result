@@ -20,7 +20,7 @@
       .line
       .items_content
         - @products.each do |product|
-          .item
+          .item{:data => {:href => product_path(product)}}
             %img{:src=> image_path(product.image), :alt => product.name}
             .description
               = product.name
