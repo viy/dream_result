@@ -4,22 +4,22 @@
 %div
   %ol
     %li
-      %a{:href => get_accardion_url(:tag => t( "materials.metal"))}
+      %a{:href => get_accardion_url(:tag => [t( "materials.metal"),t( "services.exterior")])}
         =t "materials.metal"
     %li
-      %a{:href => get_accardion_url(:tag => t( "materials.plastic"))}
+      %a{:href => get_accardion_url(:tag => [t( "materials.plastic"),t( "services.exterior")])}
         =t "materials.plastic"
     %li
-      %a{:href => get_accardion_url(:tag => t( "materials.glass"))}
+      %a{:href => get_accardion_url(:tag => [t( "materials.glass"),t( "services.exterior")])}
         =t "materials.glass"
     %li
-      %a{:href => get_accardion_url(:tag => t( "parts.disks"))}
+      %a{:href => get_accardion_url(:tag => [t( "parts.disks"),t( "services.exterior")])}
         =t "parts.disks"
     %li
-      %a{:href => get_accardion_url(:tag => t( "parts.engine_cave"))}
+      %a{:href => get_accardion_url(:tag => [t( "parts.engine_cave"),t( "services.exterior")])}
         =t "parts.engine_cave"
-    %li{:href => get_accardion_url(:tag => t( "parts.headlamp"))}
-      %a
+    %li
+      %a{:href => get_accardion_url(:tag => [t( "parts.headlamp"),t( "services.exterior")])}
         =t "parts.headlamp"
 
 %h5
@@ -28,16 +28,16 @@
 %div
   %ol
     %li
-      %a{:href => get_accardion_url(:tag => t( "services.varnish_types.cleaning"))}
+      %a{:href => get_accardion_url(:tag => [t( "services.varnish_types.cleaning"),t( "services.varnish")])}
         =t "services.varnish_types.cleaning"
     %li
-      %a{:href => get_accardion_url(:tag => t( "services.varnish_types.prepearing"))}
+      %a{:href => get_accardion_url(:tag => [t( "services.varnish_types.prepearing"),t( "services.varnish")])}
         =t "services.varnish_types.prepearing"
     %li
-      %a{:href => get_accardion_url(:tag => t( "services.varnish_types.polishing"))}
+      %a{:href => get_accardion_url(:tag => [t( "services.varnish_types.polishing"),t( "services.varnish")])}
         =t "services.varnish_types.polishing"
     %li
-      %a{:href => get_accardion_url(:tag => t( "services.varnish_types.protection"))}
+      %a{:href => get_accardion_url(:tag => [t( "services.varnish_types.protection"),t( "services.varnish")])}
         =t "services.varnish_types.protection"
 %h5
   %a{:href=> get_accardion_url(:tag => t( "services.interior"))}
@@ -48,11 +48,11 @@
       %a{:href=> get_accardion_url(:tag => t( "materials.plastic"))}
         =t "materials.plastic"
     %li
-      %a{href: get_accardion_url(:tag => t( "materials.glass"))}
+      %a{href: get_accardion_url(:tag => [t( "materials.glass"),t( "materials.plastic")])}
         =t "materials.glass"
     %li
-      %a{:href=> get_accardion_url(:tag => t( "materials.textile_only"))}
+      %a{:href=> get_accardion_url(:tag => [t( "materials.textile_only"),t( "materials.plastic")])}
         =t "materials.textile_only"
     %li
-      %a{:href=> get_accardion_url(:tag => t( "materials.leather"))}
+      %a{:href=> get_accardion_url(:tag => [t( "materials.leather"),t( "materials.plastic")])}
         =t "materials.leather"

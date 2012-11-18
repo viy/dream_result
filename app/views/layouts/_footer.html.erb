@@ -7,19 +7,19 @@
         </div>
         <div class="upper-footer-products">
           <ul>
-            <li><a><%= t 'services.varnish_types.cleaning' %></a></li>
-            <li><a><%= t 'services.varnish_types.prepearing' %></a></li>
-            <li><a><%= t 'services.varnish_types.polishing' %></a></li>
-            <li><a><%= t 'services.varnish_types.protection' %></a></li>
-            <li><a><%= t 'services.varnish_types.care' %></a></li>
+            <li><a href="<%= products_url(:tag => [t('services.varnish_types.cleaning')]) -%>"><%= t 'services.varnish_types.cleaning' %></a></li>
+            <li><a href="<%= products_url(:tag => [t('services.varnish_types.prepearing')]) -%>"><%= t('services.varnish_types.prepearing') %></a></li>
+            <li><a href="<%= products_url(:tag => [t('services.varnish_types.polishing')]) -%>"><%= t 'services.varnish_types.polishing' %></a></li>
+            <li><a href="<%= products_url(:tag => [t('services.varnish_types.protection')]) -%>"><%= t('services.varnish_types.protection') %></a></li>
+            <li><a href="<%= products_url(:tag => [t('services.varnish_types.care')]) -%>"><%= t('services.varnish_types.care') %></a></li>
           </ul>
           <ul>
-            <li><a><%= t 'materials.varnish' %></a></li>
-            <li><a><%= t 'materials.metal' %></a></li>
-            <li><a><%= t 'materials.plastic' %></a></li>
-            <li><a><%= t 'materials.glass' %></a></li>
-            <li><a><%= t 'materials.ruber' %></a></li>
-            <li><a><%= t 'materials.textile' %></a></li>
+            <li><a href="<%= products_url(:tag => [t('materials.varnish')]) -%>"><%= t('materials.varnish') %></a></li>
+            <li><a href="<%= products_url(:tag => [t('materials.metal')]) -%>"><%= t('materials.metal') %></a></li>
+            <li><a href="<%= products_url(:tag => [t('materials.plastic')]) -%>"><%= t('materials.plastic') %></a></li>
+            <li><a href="<%= products_url(:tag => [t('materials.glass')]) -%>"><%= t('materials.glass') %></a></li>
+            <li><a href="<%= products_url(:tag => [t('materials.ruber')]) -%>"><%= t('materials.ruber') %></a></li>
+            <li><a href="<%= products_url(:tag => [t('materials.textile')]) -%>"><%= t('materials.textile') %></a></li>
           </ul>
         </div>
       </div>
@@ -31,30 +31,30 @@
         <div>
           <div class="upper-footer-s">
             <ul>
-              <li><a><%= t 'services.varnish' %></a></li>
-              <li><a><%= t 'services.varnish_types.cleaning' %></a></li>
-              <li><a><%= t 'services.varnish_types.prepearing' %></a></li>
-              <li><a><%= t 'services.varnish_types.polishing' %></a></li>
-              <li><a><%= t 'services.varnish_types.protection' %></a></li>
+              <li><a href="<%= services_url(:tag => t('services.varnish'))-%>"><%= t('services.varnish') %></a></li>
+              <li><a href="<%= services_url(:tag => t 'services.varnish_types.cleaning')-%>"><%= t 'services.varnish_types.cleaning' %></a></li>
+              <li><a href="<%= services_url(:tag => t 'services.varnish_types.prepearing')-%>"><%= t 'services.varnish_types.prepearing' %></a></li>
+              <li><a href="<%= services_url(:tag => t 'services.varnish_types.polishing')-%>"><%= t 'services.varnish_types.polishing' %></a></li>
+              <li><a href="<%= services_url(:tag => t 'services.varnish_types.protection')-%>"><%= t 'services.varnish_types.protection' %></a></li>
             </ul>
             <ul>
-              <li><a><%= t 'materials.metal' %></a></li>
-              <li><a><%= t 'materials.plastic' %></a></li>
-              <li><a><%= t 'materials.glass' %></a></li>
-              <li><a><%= t 'parts.disks' %></a></li>
-              <li><a><%= t 'parts.engine_cave' %></a></li>
-              <li><a><%= t 'parts.headlamp' %></a></li>
-              <li><a><%= t 'materials.textile' %></a></li>
+              <li><a href="<%= services_url(:tag => t 'materials.metal')-%>"><%= t 'materials.metal' %></a></li>
+              <li><a href="<%= services_url(:tag => t 'materials.plastic')-%>"><%= t 'materials.plastic' %></a></li>
+              <li><a href="<%= services_url(:tag => t 'materials.glass')-%>"><%= t 'materials.glass' %></a></li>
+              <li><a href="<%= services_url(:tag => t 'parts.disks')-%>"><%= t 'parts.disks' %></a></li>
+              <li><a href="<%= services_url(:tag => t 'parts.engine_cave')-%>"><%= t 'parts.engine_cave' %></a></li>
+              <li><a href="<%= services_url(:tag => t 'parts.headlamp')-%>"><%= t 'parts.headlamp' %></a></li>
+              <li><a href="<%= services_url(:tag => t 'materials.textile')-%>"><%= t 'materials.textile' %></a></li>
             </ul>
           </div>
           <div class="upper-footer-ps">
             <ul>
-              <li><a><%= t 'programs.basic' %></a></li>
-              <li><a><%= t 'programs.express' %></a></li>
+              <li><a href="<%= services_url-%>"><%= t 'programs.basic' %></a></li>
+              <li><a href="<%= services_url-%>"><%= t 'programs.express' %></a></li>
             </ul>
             <ul>
-              <li><a><%= t 'services.interior' %></a></li>
-              <li><a><%= t 'services.exterior' %></a></li>
+              <li><a href="<%= services_url(:tag => t('services.interior'))-%>"><%= t 'services.interior' %></a></li>
+              <li><a href="<%= services_url(:tag => t('services.exterior'))-%>"><%= t 'services.exterior' %></a></li>
             </ul>
           </div>
         </div>
