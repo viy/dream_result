@@ -35,12 +35,12 @@
               .name
                 = t 'programs.in_basic'
               .price
-                = @service.basic_program.nil? ? t('included') : "#{@service.basic_program} #{t 'curency'}"
+                = get_price_name(@service.basic_program)
             .express
               .name
                 = t 'programs.in_express'
               .price
-                = @service.express_program.nil? ? t('included') : "#{@service.express_program} #{t 'curency'}"
+                = get_price_name(@service.express_program)
           .order
             %button.btn.btn-danger
               = t 'programs.order'

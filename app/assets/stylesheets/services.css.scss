@@ -85,113 +85,62 @@
     width: 20px;
   }
 
-  .programms {
+  .programms  {
+     background: image-url("basic_express_box.png") no-repeat scroll 0 0 transparent;
+     width: 735px;
+     height: 420px;
+     margin: 0px 0 10px 5px;
   }
 
-  .programms .basic, .programms .express {
-    background: image-url("box_365x395.png") no-repeat scroll 0 0 transparent;
-    display: inline-block;
-    width: 365px;
-    height: 395px;
-    margin: 20px 0 10px 5px;
-    vertical-align: top;
-  }
-
-  .shild {
-    width: 130px;
-    height: 135px;
-    margin: 25px 0 0 25px;
+  .programms .basic, .programms .express{
     display: inline-block;
     vertical-align: top;
-  }
-  .shild .name {
-    font-family: sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    padding-left: 13px;
-    padding-top: 19px;
-    text-align: center;
-    width: 103px;
-    text-shadow: 1px 1px white;
+    position: relative;
+    margin: 20px 0 0 120px;
   }
 
-  .shild .name .p_name{
-    font-size: 20px;
-  }
-
-  .shild .name .program{
-    font-size: 14px;
-  }
-  .basic .shild {
-    background-image: image-url("ultimate_detailing_s.png");
-  }
-
-  .express .shild {
-    background-image: image-url("expressdetailing_s.png");
-  }
-  .car-logo, .prices, .price {
+  .price {
     vertical-align: top;
     display: inline-block;
   }
-
-  .car-logo > div {
-    width: 110px;
-    height: 41px;
-    vertical-align: top;
-  }
-
-  .prices {
-    margin-top: 20px;
+  .programms .express {
+    margin-left: 99px;
   }
   .price {
 
   }
-  .price div {
-    color: red;
-    font-size: 12px;
-    font-style: italic;
-    margin-left: 7px;
-    margin-top: 18px;
-  }
-  .price span{
+
+  .price div{
     color: red;
     font-size: 20px;
     font-style: italic;
+    margin: 20px 0 0 30px;
   }
 
-  .car1 {
-    background: image-url("group1_m.png") no-repeat 0 0 transparent;
-  }
-
-  .car2 {
-    background: image-url("group2_m.png") no-repeat 0 0 transparent;
-  }
-
-  .car3 {
-    background: image-url("group3_m.png") no-repeat 0 0 transparent;
-  }
-
-  .car4 {
-    background: image-url("group4_m.png") no-repeat 0 0 transparent;
+  .price .price-label{
+    color: #a9a9a9;
+    margin-top: 15px;
   }
 
   .description {
-    width: 315px;
+    width: 220px;
     text-align: justify;
     margin: 10px 0 0 28px;
-    height: 130px;
+    line-height: 14px;
+    height: 135px;
   }
 
   .buttons .order, .buttons .include {
     display: inline-block;
     vertical-align: top;
-    margin: 15px 0 0 30px;
+    margin: 15px 0 0 20px;
+
   }
 
   .buttons .include {
-    float: right;
     margin-top: 23px;
-    margin-right: 20px;
+    margin-right: 0px;
+    margin-left: 30px;
   }
 
   .service-items {
@@ -286,7 +235,7 @@
     .basic {
       margin-bottom: 5px;
     }
-    margin-top: 20px;
+    margin-top: -5px;
     .title {
       margin-bottom: 5px;
       color: #0088CC;

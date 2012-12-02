@@ -1,6 +1,7 @@
 ru:
   curency: "грн"
   included: "Включено"
+  forbid: "Недоступно"
   detail: "Подробнее"
   back: "Назад"
   views:
@@ -50,7 +51,8 @@ ru:
   contacts:
     name: "Контакты"
     address: "Киев, ул. Малиновскгого 12, ТРЦ Метрополис, паркинг. "
-    phone: "+38 (044) 587 87 87"
+    phone: "+38 (044) 596 00 54"
+    phone2: "+38 (098) 688 03 82"
     letter: "Написать письмо"
     service_name: "DREAM SHINE #1"
     address_name: "Адрес:"

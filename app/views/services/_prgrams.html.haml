@@ -1,0 +1,97 @@
+.basic
+  .description
+    = t 'programs.basic_long_desc'
+  .prices
+    .price
+      .price-label
+        = t 'services.exterior'
+      %div
+        1750
+        =t 'curency'
+      %div
+        2000
+        =t 'curency'
+      %div
+        2500
+        =t 'curency'
+      %div
+        3000
+        =t 'curency'
+    .price
+      .price-label
+        = t 'services.interior'
+      %div
+        790
+        =t 'curency'
+      %div
+        890
+        =t 'curency'
+      %div
+        990
+        =t 'curency'
+      %div
+        1090
+        =t 'curency'
+  .buttons
+    -#.order
+    -#  %button.btn.btn-danger
+    -#    %i.icon-shopping-cart
+    -#    = t 'programs.order'
+    -#  %button.btn.btn-danger
+    -#    %i.icon-shopping-cart
+    -#    = t 'programs.order'
+    .include
+      %a{href: services_url(:program => :basic, :tag => t('services.exterior'))}
+        = t 'programs.inclusion'
+    .include
+      %a{href:  services_url(:program => :express, :tag => t('services.interior'))}
+        = t 'programs.inclusion'
+
+.express
+  .description
+    = t 'programs.express_long_desc'
+  .prices
+    .price
+      .price-label
+        = t 'services.exterior'
+      %div
+        290
+        =t 'curency'
+      %div
+        340
+        =t 'curency'
+      %div
+        390
+        =t 'curency'
+      %div
+        440
+        =t 'curency'
+    .price
+      .price-label
+        = t 'services.interior'
+      %div
+        290
+        =t 'curency'
+      %div
+        340
+        =t 'curency'
+      %div
+        390
+        =t 'curency'
+      %div
+        440
+        =t 'curency'
+  .buttons
+    -#.order
+    -#  %button.btn.btn-danger
+    -#    %i.icon-shopping-cart
+    -#    = t 'programs.order'
+    -#  %button.btn.btn-danger
+    -#    %i.icon-shopping-cart
+    -#    = t 'programs.order'
+    .include
+      %a{href: services_url(:program => :basic, :tag => t('services.exterior'))}
+        = t 'programs.inclusion'
+    .include
+      %a{href:  services_url(:program => :express, :tag => t('services.interior'))}
+        = t 'programs.inclusion'
