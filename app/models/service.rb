@@ -10,9 +10,9 @@ class Service < ActiveRecord::Base
   def self.filtered_by_type(type)
     case type
       when "basic"
-        where(basic_program:nil)
+        where(basic_program:nil).where("basic_program != ?", 0)
       when "express"
-        where(express_program:nil)
+        where(express_program:nil).where("express_program != ?", 0)
       else
         where(true)
     end

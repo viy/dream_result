@@ -149,7 +149,7 @@
   }
 
   .buttons .include {
-    margin-top: 23px;
+    margin-top: 0px;
     margin-right: 0px;
     margin-left: 30px;
   }
@@ -244,11 +244,24 @@
     text-transform: uppercase;
     color: #ff0000;
   }
+  .cars {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -100px;
+    margin-top: 45px;
+    .car {
+      width: 100px;
+      height: 40px;
+    }
+  }
   .prices {
+    display: inline-block;
+    vertical-align: top;
     .basic {
       margin-bottom: 5px;
     }
-    margin-top: -5px;
+    margin-top: 5px;
+
     .title {
       margin-bottom: 5px;
       color: #0088CC;

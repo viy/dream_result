@@ -10,7 +10,8 @@ jQuery ->
       baseUrl = $(contentId).data("url")
       $.getScript baseUrl
 
-
+  if $(".cars .car").length
+    $(".cars .car").tooltip()
 
   if $(".services_accordion").length
     $(".services_accordion").accordion

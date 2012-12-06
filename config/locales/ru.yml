@@ -4,6 +4,11 @@ ru:
   forbid: "Недоступно"
   detail: "Подробнее"
   back: "Назад"
+  cars:
+    small: "Седаны (Toyota Camry), Хетчбэки (VW Golf), Универсалы (Subaru Outback)"
+    medium: "Малоразмерные SUV (Toyota Rav4), Минивэны (VW Touran)"
+    big: "Среднеразмерные SUV (Toyota Prado)"
+    enormus: "Полноразмерные SUV (Toyota LC200), Представительские седаны (Lexus LS), Вэны (VW Multivan)"
   views:
     pagination:
       bootstrap:

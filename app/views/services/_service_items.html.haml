@@ -1,5 +1,4 @@
 - @services.each do |service|
-  - next if service.basic_program == 0 && params[:program] == "basic" || service.express_program && params[:program] == "express"
   .item
     .pic
       %img{:src=> service.image, :alt => "Service"}
