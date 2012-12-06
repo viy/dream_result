@@ -71,24 +71,32 @@
   .messagge2, .messagge1, .messagge-bold {
     padding: 15px 15px 0px 15px;
     font-family: 'Myriad Pro','Liberation Sans',sans-serif;
+    width: 696px;
   }
 
+  .messagge1 {
+    text-align: justify;
+  }
   .messagge-bold{
     font-weight: bold;
-    padding: 35px 15px 15px 15px;
+    padding: 15px 15px 15px 15px;
+  }
+  .messagge2 {
+    padding: 5px 15px 0px 15px;
+    text-align: justify;
   }
 
   .messagge-icon {
     float: right;
     margin-right: 35px;
-    margin-top: -15px;
+    margin-top: -5px;
     width: 20px;
   }
 
   .programms  {
      background: image-url("basic_express_box.png") no-repeat scroll 0 0 transparent;
      width: 735px;
-     height: 420px;
+     height: 463px;
      margin: 0px 0 10px 5px;
   }
 
@@ -115,15 +123,18 @@
     font-size: 20px;
     font-style: italic;
     margin: 20px 0 0 20px;
+    text-align: center;
   }
 
   .price .price-label{
     color: #a9a9a9;
     margin-top: 15px;
+    font-style: normal;
+    text-align: center;
   }
 
   .description {
-    width: 220px;
+    width: 215px;
     text-align: justify;
     margin: 10px 0 0 28px;
     line-height: 14px;
@@ -170,6 +181,8 @@
     .pic {
       display: inline-block;
       vertical-align: top;
+      width: 130px;
+      height: 130px;
       img {
         width: 130px;
         height: 130px;
