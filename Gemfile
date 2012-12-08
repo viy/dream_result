@@ -35,7 +35,7 @@ end
 
 group :production do
   gem 'pg'
-  gem 'rack-google_analytics', :require => "rack/google_analytics"
+  gem 'rack-google-analytics'
 end
 
 gem 'jquery-rails'
